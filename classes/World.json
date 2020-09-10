@@ -1,0 +1,52 @@
+{
+	"World:SetWind": {
+		"body": "World:SetWind(${1:number})",
+		"description": "World:SetWind",
+		"prefix": "World:SetWind"
+	},
+	"World:SetWeather": {
+		"body": "World:SetWeather(${1:number})",
+		"description": "World:SetWeather",
+		"prefix": "World:SetWeather"
+	},
+	"World:SetSunAngle": {
+		"body": "World:SetSunAngle(${1:number})",
+		"description": "World:SetSunAngle",
+		"prefix": "World:SetSunAngle"
+	},
+	"World:SetSunSpeed": {
+		"body": "World:SetSunSpeed(${1:number})",
+		"description": "World:SetSunSpeed",
+		"prefix": "World:SetSunSpeed"
+	},
+	"World:SetTime": {
+		"body": "World:SetTime(${1:Hours}, ${2:Minutes})",
+		"description": "World:SetTime",
+		"prefix": "World:SetTime"
+	},
+	"World:GetWeather": {
+		"body": "World:GetWeather()",
+		"description": "World:GetWeather",
+		"prefix": "World:GetWeather"
+	},
+	"World:GetWind": {
+		"body": "World:GetWind()",
+		"description": "World:GetWind",
+		"prefix": "World:GetWind"
+	},
+	"World:GetSunAngle": {
+		"body": "World:GetSunAngle()",
+		"description": "World:GetSunAngle",
+		"prefix": "World:GetSunAngle"
+	},
+	"World:GetSunSpeed": {
+		"body": "World:GetSunSpeed()",
+		"description": "World:GetSunSpeed",
+		"prefix": "World:GetSunSpeed"
+	},
+	"World:GetTime": {
+		"body": "World:GetTime()",
+		"description": "World:GetTime",
+		"prefix": "World:GetTime"
+	}
+}

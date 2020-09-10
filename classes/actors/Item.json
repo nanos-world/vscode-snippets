@@ -1,0 +1,22 @@
+{
+	"Item:on(\"Spawn\")": {
+		"body": "Item:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when an Item is Spawned/Created",
+		"prefix": "Item:on(\"Spawn\")"
+	},
+	"Item:on(\"Destroy\")": {
+		"body": "Item:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when an Item is destroyed",
+		"prefix": "Item:on(\"Destroy\")"
+	},
+	"Item:on(\"PickUp\")": {
+		"body": "Item:on(\"PickUp\", function( ${1:item}, ${2:character} )\n\t${0:-- body}\nend)",
+		"description": "When a Character picks up this",
+		"prefix": "Item:on(\"PickUp\")"
+	},
+	"Item:on(\"Drop\")": {
+		"body": "Item:on(\"Drop\", function( ${1:item}, ${2:character} )\n\t${0:-- body}\nend)",
+		"description": "When a Character drops this",
+		"prefix": "Item:on(\"Drop\")"
+	}
+}

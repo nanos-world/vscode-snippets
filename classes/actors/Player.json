@@ -1,0 +1,33 @@
+{
+	"Player:GetPing": {
+		"body": ":GetPing()",
+		"description": "Returns the ping of a player",
+		"prefix": ":GetPing"
+	},
+	"Player:GetControlledCharacter": {
+		"body": ":GetControlledCharacter()",
+		"description": "Returns the character of the player. If the player has not yet been assigned a character, nil is returned.",
+		"prefix": ":GetControlledCharacter"
+	},
+	"Player:Possess": {
+		"body": ":Possess(${1:new_character})",
+		"description": "Bind the Player to a Character",
+		"prefix": ":Possess"
+	},
+	"Player:UnPossess": {
+		"body": ":UnPossess()",
+		"description": "Release the Player from the Character",
+		"prefix": ":UnPossess",
+		"scope": ".lua"
+	},
+	"Player:on(\"Possess\")": {
+		"body": "Player:on(\"Possess\", function( ${1:player}, ${2:character} )\n\t${0:-- body}\nend)",
+		"description": "A Player was bound to a Character",
+		"prefix": "Player:on(\"Possess\")"
+	},
+	"Player:on(\"UnPossess\")": {
+		"body": "Player:on(\"UnPossess\", function( ${1:player}, ${2:character}, ${3:isPlayerDisconnecting} )\n\t${0:-- body}\nend)",
+		"description": "A Character was released from the Player",
+		"prefix": "Player:on(\"UnPossess\")"
+	}
+}

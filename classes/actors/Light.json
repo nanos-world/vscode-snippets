@@ -1,0 +1,12 @@
+{
+	"Light:on(\"Spawn\")": {
+		"body": "Light:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when an Light is Spawned/Created",
+		"prefix": "Light:on(\"Spawn\")"
+	},
+	"Light:on(\"Destroy\")": {
+		"body": "Light:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when an Light is destroyed",
+		"prefix": "Light:on(\"Destroy\")"
+	}
+}

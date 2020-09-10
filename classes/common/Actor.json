@@ -1,0 +1,97 @@
+{
+	"Actor:GetLocation": {
+		"body": ":GetLocation()",
+		"description": "Get the actor’s position in the game world",
+		"prefix": ":GetLocation"
+	},
+	"Actor:GetRotation": {
+		"body": ":GetRotation()",
+		"description": "Get the actor’s rotation in the game world",
+		"prefix": ":GetRotation"
+	},
+	"Actor:GetCollision": {
+		"body": ":GetCollision()",
+		"description": "Gets the current actor’s collision",
+		"prefix": ":GetCollision"
+	},
+	"Actor:IsGravityEnabled": {
+		"body": ":IsGravityEnabled()",
+		"description": "Gets the actor’s gravity enabled",
+		"prefix": ":IsGravityEnabled"
+	},
+	"Actor:SetRotation": {
+		"body": ":SetRotation(${1:NewRotation})",
+		"description": "Sets the actor’s rotation in the game world",
+		"prefix": ":SetRotation"
+	},
+	"Actor:SetLocation": {
+		"body": ":SetLocation(${1:NewLocation})",
+		"description": "Sets the actor’s location in the game world",
+		"prefix": ":SetLocation"
+	},
+	"Actor:SetScale": {
+		"body": ":SetScale(${1:Scale})",
+		"description": "Sets the actor’s scale",
+		"prefix": ":SetScale"
+	},
+	"Actor:SetCollision": {
+		"body": ":SetCollision(${1|0,1,2|})",
+		"description": "Sets the actor’s collision\n0 - Normal\n1 - Static Only\n2 - No Collision",
+		"prefix": ":SetCollision"
+	},
+	"Actor:SetGravityEnabled": {
+		"body": ":SetGravityEnabled(${1:NewGravity})",
+		"description": "Sets the actor’s gravity enabled",
+		"prefix": ":SetGravityEnabled"
+	},
+	"Actor:SetInitialLocation": {
+		"body": ":SetInitialLocation(${1:NewInitialLocation})",
+		"description": "Sets the initial location",
+		"prefix": ":SetInitialLocation"
+	},
+	"Actor:GetInitialLocation": {
+		"body": ":GetInitialLocation()",
+		"description": "Gets the initial location",
+		"prefix": ":GetInitialLocation"
+	},
+	"Actor:SetTintColor": {
+		"body": ":SetTintColor(${1:NewTintColor})",
+		"description": "Sets the tint color, for completely paint an object, multiply the color by 10 or 100",
+		"prefix": ":SetTintColor"
+	},
+	"Actor:GetTintColor": {
+		"body": ":GetTintColor()",
+		"description": "Gets the Tint Color",
+		"prefix": ":GetTintColor"
+	},
+	"Actor:Destroy": {
+		"body": ":Destroy()",
+		"description": "Destroys this Actor",
+		"prefix": ":Destroy"
+	},
+	"Actor:IsValid": {
+		"body": ":IsValid()",
+		"description": "Returns if this is Valid",
+		"prefix": ":IsValid"
+	},
+	"Actor:AttachTo": {
+		"body": ":AttachTo(${1:Other}, ${2: BoneName}, ${3:RelativeLocation})",
+		"description": "Attaches this Actor to any other Actor with a Relative Offset",
+		"prefix": ":AttachTo"
+	},
+	"Actor:AddImpulse": {
+		"body": ":AddImpulse(${1:Force})",
+		"description": "Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)",
+		"prefix": ":AddImpulse"
+	},
+	"Actor:SetValue": {
+		"body": ":SetValue(${1:Key}, ${2:Value})",
+		"description": "Sets a value in this entity, which can be accessed by any package (local only)",
+		"prefix": ":SetValue"
+	},
+	"Actor:GetValue": {
+		"body": ":GetValue(${1:Key})",
+		"description": "Gets a value given a key",
+		"prefix": ":GetValue"
+	}
+}

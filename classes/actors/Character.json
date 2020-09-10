@@ -1,0 +1,287 @@
+{
+	"Character:SetHealth()": {
+		"body": ":SetHealth(${1:health)",
+		"description": "Character’s Health. Sets under 0 will kill. Sets above 0 will Respawn.",
+		"prefix": ":SetHealth"
+	},
+	"Character:GetHealth()": {
+		"body": ":GetHealth()",
+		"description": "Gets Character’s Health.",
+		"prefix": ":GetHealth"
+	},
+	"Character:PickUp": {
+		"body": ":PickUp(${1:item})",
+		"description": "Gives a Item/Grenade/Weapon (Pickable) to the Character",
+		"prefix": ":PickUp"
+	},
+	"Character:Drop": {
+		"body": ":Drop()",
+		"description": "Drops any Pickable the Character is holding",
+		"prefix": ":Drop"
+	},
+	"Character:GrabProp": {
+		"body": ":GrabProp(${1:prop})",
+		"description": "Gives a Prop to the Character",
+		"prefix": ":GrabProp"
+	},
+	"Character:UnGrabProp": {
+		"body": ":UnGrabProp()",
+		"description": "UnGrabs/Drops the Prop the Character is holding",
+		"prefix": ":UnGrabProp"
+	},
+	"Character:GetGrabbedProp": {
+		"body": ":GetGrabbedProp()",
+		"description": "Gets the Grabbing Prop",
+		"prefix": ":GetGrabbedProp"
+	},
+	"Character:GetPicked": {
+		"body": ":GetPicked()",
+		"description": "Gets the holding Picked Item/Grenade/Weapon",
+		"prefix": ":GetPicked"
+	},
+	"Character:GetVehicle": {
+		"body": ":GetVehicle()",
+		"description": "Gets the Vehicle the Character is on",
+		"prefix": ":GetVehicle"
+	},
+	"Character:GetPlayer": {
+		"body": ":GetPlayer()",
+		"description": "Gets the Player controlling this Character",
+		"prefix": ":GetPlayer"
+	},
+	"Character:SetRagdollMode": {
+		"body": ":SetRagdollMode(${1:bool})",
+		"description": "Sets Character Ragdoll Mode",
+		"prefix": ":SetRagdollMode"
+	},
+	"Character:IsInRagdollMode": {
+		"body": ":IsInRagdollMode()",
+		"description": "Gets Character Ragdoll Mode",
+		"prefix": ":IsInRagdollMode"
+	},
+	"Character:SetViewMode": {
+		"body": ":SetViewMode(${1|0,1,2,3|})",
+		"description": "Sets Character View Mode (0 - FPS, 1 TPS1, 2 - TPS2, 3 - TPS3)",
+		"prefix": ":SetViewMode"
+	},
+	"Character:GetViewMode": {
+		"body": ":GetViewMode()",
+		"description": "Gets Character View Mode",
+		"prefix": ":GetViewMode"
+	},
+	"Character:RandomizeCustomization": {
+		"body": ":RandomizeCustomization()",
+		"description": "Randomize all character customizations",
+		"prefix": ":RandomizeCustomization"
+	},
+	"Character:LeaveVehicle": {
+		"body": ":LeaveVehicle()",
+		"description": "Leaves the current Vehicle",
+		"prefix": ":LeaveVehicle"
+	},
+	"Character:EnterVehicle": {
+		"body": ":EnterVehicle(${1:vehicle}, ${2:seat})",
+		"description": "Enters the Vehicle at Seat (0 - Driver)",
+		"prefix": ":EnterVehicle"
+	},
+	"Character:SetMovementEnabled": {
+		"body": ":SetMovementEnabled(${1:bool})",
+		"description": "Enables/Disables Character’s Movement",
+		"prefix": ":SetMovementEnabled"
+	},
+	"Character:IsMovementEnabled": {
+		"body": ":IsMovementEnabled()",
+		"description": "Gets Character Movement Enabled",
+		"prefix": ":IsMovementEnabled"
+	},
+	"Character:SetMorphTarget": {
+		"body": ":SetMorphTarget(${1:id}, ${2:value})",
+		"description": "SetMorphTarget",
+		"prefix": ":SetMorphTarget"
+	},
+	"Character:SetScalarParameter": {
+		"body": ":SetScalarParameter(${1:id}, ${2:value})",
+		"description": "SetScalarParameter",
+		"prefix": ":SetScalarParameter"
+	},
+	"Character:SetVectorParameter": {
+		"body": ":SetVectorParameter(${1:id}, ${2:vector})",
+		"description": "SetVectorParameter",
+		"prefix": ":SetVectorParameter"
+	},
+	"Character:GetMorphTarget": {
+		"body": ":GetMorphTarget(${1:id})",
+		"description": "GetMorphTarget",
+		"prefix": ":GetMorphTarget"
+	},
+	"Character:GetScalarParameter": {
+		"body": ":GetScalarParameter(${1:id})",
+		"description": "GetScalarParameter",
+		"prefix": ":GetScalarParameter"
+	},
+	"Character:GetVectorParameter": {
+		"body": ":GetVectorParameter(${1:id})",
+		"description": "GetVectorParameter",
+		"prefix": ":GetVectorParameter"
+	},
+	"Character:AddStaticMeshAttached": {
+		"body": ":AddStaticMeshAttached(${1:id}, ${2:StaticMeshPath}, ${3:Socket}, ${4:RelativeLocation}, ${5:RelativeRoation})",
+		"description": "Spawns and Attaches a StaticMesh into this Character in a Socket with\nrelative Location and Rotation.\nUses a custom ID to be used for removing it further",
+		"prefix": ":AddStaticMeshAttached"
+	},
+	"Character:AddSkeletalMeshAttached": {
+		"body": ":AddSkeletalMeshAttached(${1:id}, ${2:StaticMeshPath})",
+		"description": "Spawns and Attaches a SkeletalMesh into this Character, the SkeletalMesh must have the same Skeletal used by the Character Mesh,\nand will follow all animations from it.\nUses a custom ID to be used for removing it further",
+		"prefix": ":AddSkeletalMeshAttached"
+	},
+	"Character:RemoveStaticMeshAttached": {
+		"body": ":RemoveStaticMeshAttached(${1:id})",
+		"description": "Removes, if existing, a StaticMesh from this Character given it’s custom ID",
+		"prefix": ":RemoveStaticMeshAttached"
+	},
+	"Character:RemoveSkeletalMeshAttached": {
+		"body": ":RemoveSkeletalMeshAttached(${1:id})",
+		"description": "Removes, if existing, a SkeletalMesh from this Character given it’s custom ID",
+		"prefix": ":RemoveSkeletalMeshAttached"
+	},
+	"Character:MoveTo": {
+		"body": ":MoveTo(${1:location}, ${2:AcceptanceRadius})",
+		"description": "AI: Makes this Character to walk to the Location",
+		"prefix": ":MoveTo"
+	},
+	"Character:LookAt": {
+		"body": ":LookAt(${1:location})",
+		"description": "AI: Tries to make this Character to look at Location",
+		"prefix": ":LookAt"
+	},
+	"Character:SetWeaponAimMode": {
+		"body": ":SetWeaponAimMode(${1|0,1,2,3,4|})",
+		"description": "0 - None,\n1 - ADS (FPS),\n2 - ZoomedZoom (TPS),\n3 - Zoomed,\n4 - ZoomedFar",
+		"prefix": ":SetWeaponAimMode"
+	},
+	"Character:on(\"Spawn\")": {
+		"body": "Character:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when Character is Spawned/Created",
+		"prefix": "Character:on(\"Spawn\")"
+	},
+	"Character:on(\"Destroy\")": {
+		"body": "Character:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when Character is Destroyed",
+		"prefix": "Character:on(\"Destroy\")"
+	},
+	"Character:on": {
+		"body": "Character:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
+		"description": "Character:on",
+		"prefix": "Character:on"
+	},
+	"Character:on(\"PickUp\")": {
+		"body": "Character:on(\"PickUp\", function( ${1:self}, ${2:object} )\n\t${0:-- body}\nend)",
+		"description": "When Character picks up anything",
+		"prefix": "Character:on(\"PickUp\")"
+	},
+	"Character:on(\"Drop\")": {
+		"body": "Character:on(\"Drop\", function( ${1:self}, ${2:object} )\n\t${0:-- body}\nend)",
+		"description": "When Character drops anything",
+		"prefix": "Character:on(\"Drop\")"
+	},
+	"Character:on(\"GrabProp\")": {
+		"body": "Character:on(\"GrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- body}\nend)",
+		"description": "When Character grabs up a Prop",
+		"prefix": "Character:on(\"GrabProp\")"
+	},
+	"Character:on(\"UnGrabProp\")": {
+		"body": "Character:on(\"UnGrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- body}\nend)",
+		"description": "When Character drops a Prop",
+		"prefix": "Character:on(\"UnGrabProp\")"
+	},
+	"Character:on(\"EnterVehicle\")": {
+		"body": "Character:on(\"EnterVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- body}\nend)",
+		"description": "When Character enters a vehicle",
+		"prefix": "Character:on(\"EnterVehicle\")"
+	},
+	"Character:on(\"LeaveVehicle\")": {
+		"body": "Character:on(\"LeaveVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- body}\nend)",
+		"description": "When Character leaves a vehicle",
+		"prefix": "Character:on(\"LeaveVehicle\")"
+	},
+	"Character:on(\"Respawn\")": {
+		"body": "Character:on(\"Respawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "When Character Respawns",
+		"prefix": "Character:on(\"Respawn\")"
+	},
+	"Character:on(\"Death\")": {
+		"body": "Character:on(\"Death\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "When Character Dies",
+		"prefix": "Character:on(\"Death\")"
+	},
+	"Character:on(\"TakeDamage\")": {
+		"body": "Character:on(\"TakeDamage\", function( ${1:self}, ${2:damage}, ${3:type}, ${4:bone}, ${5:from}, ${6:instigator} )\n\t${0:-- body}\nend)",
+		"description": "When Character takes Damage",
+		"prefix": "Character:on(\"TakeDamage\")"
+	},
+	"Character:on(\"Fire\")": {
+		"body": "Character:on(\"Fire\", function( ${1:self}, ${2:weapon} )\n\t${0:-- body}\nend)",
+		"description": "When Character fires a Weapon",
+		"prefix": "Character:on(\"Fire\")"
+	},
+	"Character:on(\"Possessed\")": {
+		"body": "Character:on(\"Possessed\", function( ${1:self}, ${2:possesser} )\n\t${0:-- body}\nend)",
+		"description": "When Character is possessed",
+		"prefix": "Character:on(\"Possessed\")"
+	},
+	"Character:on(\"Unpossessed\")": {
+		"body": "Character:on(\"Unpossessed\", function( ${1:self}, ${2:old_possesser} )\n\t${0:-- body}\nend)",
+		"description": "When Character is unpossessed",
+		"prefix": "Character:on(\"Unpossessed\")"
+	},
+	"Character:on(\"Punch\")": {
+		"body": "Character:on(\"Punch\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "When Character punches",
+		"prefix": "Character:on(\"Punch\")"
+	},
+	"Character:on(\"Reload\")": {
+		"body": "Character:on(\"Reload\", function( ${1:self}, ${2:weapon}, ${3:ammoToReload} )\n\t${0:-- body}\nend)",
+		"description": "When Character reloads a weapon",
+		"prefix": "Character:on(\"Reload\")"
+	},
+	"Character:on(\"WeaponAimModeChanged\")": {
+		"body": "Character:on(\"WeaponAimModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - None,\n1 - ADS (FPS),\n2 - ZoomedZoom (TPS),\n3 - Zoomed,\n4 - ZoomedFar",
+		"prefix": "Character:on(\"WeaponAimModeChanged\")"
+	},
+	"Character:on(\"ViewModeChanged\")": {
+		"body": "Character:on(\"ViewModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - FPS,\n1 - TPS1,\n2 - TPS2,\n3 - TPS3",
+		"prefix": "Character:on(\"ViewModeChanged\")"
+	},
+	"Character:on(\"SwimmingModeChanged\")": {
+		"body": "Character:on(\"SwimmingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - None,\n1 - Superficie,\n2 - Underwater",
+		"prefix": "Character:on(\"SwimmingModeChanged\")"
+	},
+	"Character:on(\"StanceModeChanged\")": {
+		"body": "Character:on(\"StanceModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - None,\n1 - Standing,\n2 - Crouching,\n3 - Proning",
+		"prefix": "Character:on(\"StanceModeChanged\")"
+	},
+	"Character:on(\"RagdollModeChanged\")": {
+		"body": "Character:on(\"RagdollModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "Character:on(\"RagdollModeChanged\")",
+		"prefix": "Character:on(\"RagdollModeChanged\")"
+	},
+	"Character:on(\"FallingModeChanged\")": {
+		"body": "Character:on(\"FallingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - None,\n1 - Jumping,\n2 - Climbing,\n3 - Vaulting,\n4 - Falling,\n5 - HighFalling,\n6 - Parachuting,\n7 - SkyDiving",
+		"prefix": "Character:on(\"FallingModeChanged\")"
+	},
+	"Character:on(\"GaitModeChanged\")": {
+		"body": "Character:on(\"GaitModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+		"description": "0 - None,\n1 - Walking,\n2 - Sprinting",
+		"prefix": "Character:on(\"GaitModeChanged\")"
+	},
+	"Character:on(\"MoveCompleted\")": {
+		"body": "Character:on(\"MoveCompleted\", function( ${1:self}, ${2:success} )\n\t${0:-- body}\nend)",
+		"description": "Called when AI reaches it’s destination, or when it fails",
+		"prefix": "Character:on(\"MoveCompleted\")"
+	}
+}

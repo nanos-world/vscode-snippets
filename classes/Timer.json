@@ -1,0 +1,12 @@
+{
+	"Timer:SetTimeout": {
+		"body": "Timer:SetTimeout(${1:cooldown}, ${2:table}, function()\n\t${0:-- body}\nend)",
+		"description": "Timer:SetTimeout",
+		"prefix": "Timer:SetTimeout"
+	},
+	"Timer:ClearTimeout": {
+		"body": "Timer:ClearTimeout(${1:timerID})",
+		"description": "Timer:ClearTimeout",
+		"prefix": "Timer:ClearTimeout"
+	}
+}

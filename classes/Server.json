@@ -1,0 +1,27 @@
+{
+	"Server:on": {
+		"body": "Server:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
+		"description": "Server:on",
+		"prefix": "Server:on"
+	},
+	"Server:on(\"Console\")": {
+		"body": "Server:on(\"Console\", function( ${1:text} )\n\t${0:-- body}\nend)",
+		"description": "Server:on",
+		"prefix": "Server:on(\"Console\")"
+	},
+	"Server:on(\"Start\")": {
+		"body": "Server:on(\"Start\", function()\n\t${0:-- body}\nend)",
+		"description": "Server:on",
+		"prefix": "Server:on(\"Start\")"
+	},
+	"Server:on(\"Stop\")": {
+		"body": "Server:on(\"Stop\", function()\n\t${0:-- body}\nend)",
+		"description": "Server:on",
+		"prefix": "Server:on(\"Stop\")"
+	},
+	"Server:on(\"Tick\")": {
+		"body": "Server:on(\"Tick\", function( ${1:deltaTime} )\n\t${0:-- body}\nend)",
+		"description": "Server:on",
+		"prefix": "Server:on(\"Tick\")"
+	}
+}

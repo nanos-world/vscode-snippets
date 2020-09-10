@@ -1,0 +1,62 @@
+{
+	"Vehicle:GetBodyRoughness": {
+		"body": ":GetBodyRoughness()",
+		"description": "Gets the vehicle body roughness",
+		"prefix": ":GetBodyRoughness"
+	},
+	"Vehicle:SetBodyRoughness": {
+		"body": ":SetBodyRoughness(${1:roughness})",
+		"description": "Sets the vehicle body roughness. Values between 0 and 1.",
+		"prefix": ":SetBodyRoughness"
+	},
+	"Vehicle:GetGlassColor": {
+		"body": ":GetGlassColor()",
+		"description": "Gets the vehicle glass color",
+		"prefix": ":GetGlassColor"
+	},
+	"Vehicle:SetGlassColor": {
+		"body": ":SetGlassColor(${1:color})",
+		"description": "Sets the vehicle glass color",
+		"prefix": ":SetGlassColor"
+	},
+	"Vehicle:GetGlassOpacity": {
+		"body": ":GetGlassOpacity()",
+		"description": "Gets the vehicle glass opacity",
+		"prefix": ":GetGlassOpacity"
+	},
+	"Vehicle:SetGlassOpacity": {
+		"body": ":SetGlassOpacity(${1:opacity})",
+		"description": "Sets the vehicle glass opacity",
+		"prefix": ":SetGlassOpacity"
+	},
+	"Vehicle:GetLightColor": {
+		"body": ":GetLightColor()",
+		"description": "Gets the vehicle light color",
+		"prefix": ":GetLightColor"
+	},
+	"Vehicle:SetLightColor": {
+		"body": ":SetLightColor(${1:color})",
+		"description": "Sets the vehicle light color",
+		"prefix": ":SetLightColor"
+	},
+	"Vehicle:GetPassengers": {
+		"body": ":GetPassengers()",
+		"description": "Gets all passengers in the vehicle",
+		"prefix": ":GetPassengers"
+	},
+	"Vehicle:GetPassenger": {
+		"body": ":GetPassenger(${1:seat})",
+		"description": "Gets all passengers in the vehicle. Returns nil if Seat is invalid or empty.",
+		"prefix": ":GetPassenger"
+	},
+	"Vehicle:Horn": {
+		"body": ":Horn(${1:bool})",
+		"description": "Starts or stops the vehicles horn",
+		"prefix": ":Horn"
+	},
+	"Vehicle:on(\"Horn\")": {
+		"body": "Vehicle:on(\"Horn\", function( ${1:self}, ${2:isHonking} )\n\t${0:-- body}\nend)",
+		"description": "When Vehicle honks",
+		"prefix": "Vehicle:on(\"Horn\")"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"Events:on": {
+		"body": "Events:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
+		"description": "Events:on",
+		"prefix": "Events:on"
+	}
+}

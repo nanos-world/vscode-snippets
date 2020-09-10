@@ -1,0 +1,42 @@
+{
+	"NanosWorld:GetCharacters": {
+		"body": "NanosWorld:GetCharacters()",
+		"description": "Returns an array of all characters on the server.",
+		"prefix": "NanosWorld:GetCharacters"
+	},
+	"NanosWorld:GetGrenades": {
+		"body": "NanosWorld:GetGrenades()",
+		"description": "Returns an array of all grenades on the server.",
+		"prefix": "NanosWorld:GetGrenades"
+	},
+	"NanosWorld:GetItems": {
+		"body": "NanosWorld:GetItems()",
+		"description": "Returns an array of all items on the server.",
+		"prefix": "NanosWorld:GetItems"
+	},
+	"NanosWorld:GetPlayers": {
+		"body": "NanosWorld:GetPlayers()",
+		"description": "Returns an array of all players on the server.",
+		"prefix": "NanosWorld:GetPlayers"
+	},
+	"NanosWorld:GetProps": {
+		"body": "NanosWorld:GetProps()",
+		"description": "Returns an array of all props on the server.",
+		"prefix": "NanosWorld:GetPlayers"
+	},
+	"NanosWorld:GetVehicles": {
+		"body": "NanosWorld:GetVehicles()",
+		"description": "Returns an array of all vehicles on the server.",
+		"prefix": "NanosWorld:GetVehicles"
+	},
+	"NanosWorld:GetWeapons": {
+		"body": "NanosWorld:GetWeapons()",
+		"description": "Returns an array of all weapons on the server.",
+		"prefix": "NanosWorld:GetWeapons"
+	},
+	"NanosWorld:GetLocalPlayer": {
+		"body": "NanosWorld:GetLocalPlayer()",
+		"description": "Returns the Local Player (Client Side)",
+		"prefix": "NanosWorld:GetLocalPlayer"
+	}
+}

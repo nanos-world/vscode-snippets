@@ -1,0 +1,89 @@
+{
+	"name": "nanos-world-snippets",
+	"displayName": "nanos world Official Snippets",
+	"description": "nanos world Official Snippets for VSCode",
+	"version": "0.0.1",
+	"publisher": "nanos",
+	"engines": {
+		"vscode": "^1.29.0"
+	},
+	"icon": "logo.png",
+	"keywords": [
+		"lua",
+		"nanos world",
+		"nanos"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "lua",
+				"path": "./classes/Events.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/NanosWorld.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Package.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Server.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Timer.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/World.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Character.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Item.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Light.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Player.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Prop.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Trigger.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Vehicle.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Weapon.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nanos-world/vscode-snippets"
+	},
+	"scripts": {
+		"deploy": "vsce publish --yarn"
+	},
+	"devDependencies": {
+		"vsce": "^1.79.5"
+	}
+}

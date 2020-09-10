@@ -1,0 +1,27 @@
+{
+	"Package:on": {
+		"body": "Package:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
+		"description": "Package:on",
+		"prefix": "Package:on"
+	},
+	"Package:GetName": {
+		"body": "Package:GetName()",
+		"description": "Package:GetName",
+		"prefix": "Package:GetName"
+	},
+	"Package:Require": {
+		"body": "Package:Require(\"${1}\")",
+		"description": "Package:Require(string ScriptFile)",
+		"prefix": "Package:Require"
+	},
+	"Package:RequirePackage": {
+		"body": "Package:RequirePackage(\"${1}\")",
+		"description": "Package:RequirePackage(string PackageName)",
+		"prefix": "Package:RequirePackage"
+	},
+	"Package:Log": {
+		"body": "Package:Log(\"${1}\")",
+		"description": "Package:Log(string Message)",
+		"prefix": "Package:Log"
+	}
+}

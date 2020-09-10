@@ -1,0 +1,102 @@
+{
+	"Weapon:SetAmmoClip": {
+		"body": ":SetAmmoClip(${1:NewAmmo})",
+		"description": "Sets this Weapon’s Ammo Clip",
+		"prefix": ":SetAmmoClip"
+	},
+	"Weapon:SetAmmoBag": {
+		"body": ":SetAmmoBag(${1:NewAmmo})",
+		"description": "Sets this Weapon’s Ammo Bag",
+		"prefix": ":SetAmmoBag"
+	},
+	"Weapon:SetSightTransform": {
+		"body": ":SetSightTransform(${1:Location}, ${2:Rotation})",
+		"description": "Offset applied to align player’s head to weapon’s sight and rotation applied on the weapon when ADS",
+		"prefix": ":SetSightTransform"
+	},
+	"Weapon:SetLeftHandTransform": {
+		"body": ":SetLeftHandTransform(${1:Location}, ${2:Rotation})",
+		"description": "Left Hand Offset",
+		"prefix": ":SetLeftHandTransform"
+	},
+	"Weapon:SetRightHandOffset": {
+		"body": ":SetRightHandOffset(${1:Location})",
+		"description": "Offset of Right Hand",
+		"prefix": ":SetRightHandOffset"
+	},
+	"Weapon:SetBulletColor": {
+		"body": ":SetBulletColor(${1:color})",
+		"description": "Bullet Color",
+		"prefix": ":SetBulletColor"
+	},
+	"Weapon:GetAmmoClip": {
+		"body": ":GetAmmoClip()",
+		"description": "Gets this Weapon’s Ammo Clip",
+		"prefix": ":GetAmmoClip"
+	},
+	"Weapon:GetAmmoBag": {
+		"body": ":GetAmmoBag()",
+		"description": "Gets this Weapon’s Ammo Bag",
+		"prefix": ":GetAmmoBag"
+	},
+	"Weapon:GetRightHandOffset": {
+		"body": ":GetRightHandOffset()",
+		"description": "Weapon:GetRightHandOffset()",
+		"prefix": ":GetRightHandOffset"
+	},
+	"Weapon:GetBulletColor": {
+		"body": ":GetBulletColor()",
+		"description": "Weapon:GetBulletColor()",
+		"prefix": ":GetBulletColor"
+	},
+	"Weapon:on(\"Fire\")": {
+		"body": "Weapon:on(\"Fire\", function( ${1:self}, ${2:shooter} )\n\t${0:-- body}\nend)",
+		"description": "When this weapon is fired",
+		"prefix": "Weapon:on(\"Fire\")"
+	},
+	"Weapon:on(\"Reload\")": {
+		"body": "Weapon:on(\"Reload\", function( ${1:self}, ${2:character}, ${3:ammoToReload} )\n\t${0:-- body}\nend)",
+		"description": "When this weapon is reloaded, optionally by a Character",
+		"prefix": "Weapon:on(\"Reload\")"
+	},
+	"Weapon:on(\"PickUp\")": {
+		"body": "Weapon:on(\"PickUp\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
+		"description": "When a Character picks up this",
+		"prefix": "Weapon:on(\"PickUp\")"
+	},
+	"Weapon:on(\"Drop\")": {
+		"body": "Weapon:on(\"Drop\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
+		"description": "When a Character drops this",
+		"prefix": "Weapon:on(\"Drop\")"
+	},
+	"Weapon:on(\"Spawn\")": {
+		"body": "Weapon:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when a weapon is Spawned/Created",
+		"prefix": "Weapon:on(\"Spawn\")"
+	},
+	"Weapon:on(\"Destroy\")": {
+		"body": "Weapon:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
+		"description": "Triggered when a weapon is Destroyed",
+		"prefix": "Weapon:on(\"Destroy\")"
+	},
+	"Pickable:GetAssetName": {
+		"body": ":GetAssetName()",
+		"description": "Gets the Asset name of this",
+		"prefix": ":GetAssetName"
+	},
+	"Pickable:GetHandler": {
+		"body": ":GetHandler()",
+		"description": "Gets the Character (if existing) which is holding this pickable",
+		"prefix": ":GetHandler"
+	},
+	"Pickable:PullUse": {
+		"body": ":PullUse()",
+		"description": "Force this Pickable to be used (e.g. if this is a Weapon, will fire)",
+		"prefix": ":PullUse"
+	},
+	"Pickable:ReleaseUse": {
+		"body": ":ReleaseUse()",
+		"description": "Force this Pickable to be released the usage",
+		"prefix": ":ReleaseUse"
+	}
+}

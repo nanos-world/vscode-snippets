@@ -19,6 +19,9 @@ jobs:
         node-version: 10.x
 
     - run: npm install
+  
+    - run: git config --global user.name "Gabriel T. Nardy"
+    - run: git config --global user.email "gtnardy@gmail.com"
 
     - name: Publish
       if: success()

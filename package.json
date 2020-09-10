@@ -81,7 +81,7 @@
 		"url": "https://github.com/nanos-world/vscode-snippets"
 	},
 	"scripts": {
-		"deploy": "vsce publish --yarn"
+		"deploy": "vsce publish minor --yarn"
 	},
 	"devDependencies": {
 		"vsce": "^1.79.5"

@@ -14,7 +14,8 @@ jobs:
     steps:   
     - name: Publish
       if: success()
-      run: npm install
-      run: npm run deploy
+      run:
+        - npm install 
+        - npm run deploy
       env:
         VSCE_PAT: ${{ secrets.VSCE_PAT }}

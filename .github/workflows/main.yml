@@ -24,4 +24,5 @@ jobs:
       if: success()
       run: npm run deploy
       env:
-        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        - VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        - GITHUB_PAT: ${{ secrets.PAT }}

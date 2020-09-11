@@ -1,52 +1,57 @@
 {
 	"World:SetWind": {
 		"body": "World:SetWind(${1:number})",
-		"description": "World:SetWind",
+		"description": "Sets the global Wind intensity",
 		"prefix": "World:SetWind"
 	},
 	"World:SetWeather": {
 		"body": "World:SetWeather(${1:number})",
-		"description": "World:SetWeather",
+		"description": "Sets the global Weather (0 - Clear, 1 - Rain, 2 - Cloudy, 3 - Thunderstorm)",
 		"prefix": "World:SetWeather"
 	},
 	"World:SetSunAngle": {
 		"body": "World:SetSunAngle(${1:number})",
-		"description": "World:SetSunAngle",
+		"description": "Sets the sun’s angle (0-360)",
 		"prefix": "World:SetSunAngle"
 	},
 	"World:SetSunSpeed": {
 		"body": "World:SetSunSpeed(${1:number})",
-		"description": "World:SetSunSpeed",
+		"description": "Sets the sun’s time speed (default: ‘60’, which means 60 seconds in game = 1 second in real world)",
 		"prefix": "World:SetSunSpeed"
 	},
 	"World:SetTime": {
 		"body": "World:SetTime(${1:Hours}, ${2:Minutes})",
-		"description": "World:SetTime",
+		"description": "Sets the global’s time of the day",
 		"prefix": "World:SetTime"
+	},
+	"World:SpawnDefaultSun": {
+		"body": "World:SpawnDefaultSun()",
+		"description": "Overrides all Light/Sun Actors with the NanosWorld’s Official one, to be able to use the functions from this page",
+		"prefix": "World:SpawnDefaultSun"
 	},
 	"World:GetWeather": {
 		"body": "World:GetWeather()",
-		"description": "World:GetWeather",
+		"description": "Returns the current Weather",
 		"prefix": "World:GetWeather"
 	},
 	"World:GetWind": {
 		"body": "World:GetWind()",
-		"description": "World:GetWind",
+		"description": "Returns the current Wind intensity",
 		"prefix": "World:GetWind"
 	},
 	"World:GetSunAngle": {
 		"body": "World:GetSunAngle()",
-		"description": "World:GetSunAngle",
+		"description": "Returns the current Sun Angle",
 		"prefix": "World:GetSunAngle"
 	},
 	"World:GetSunSpeed": {
 		"body": "World:GetSunSpeed()",
-		"description": "World:GetSunSpeed",
+		"description": "Returns the current Sun Speed",
 		"prefix": "World:GetSunSpeed"
 	},
 	"World:GetTime": {
 		"body": "World:GetTime()",
-		"description": "World:GetTime",
+		"description": "Returns the current World Time",
 		"prefix": "World:GetTime"
 	}
 }

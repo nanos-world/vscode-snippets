@@ -169,11 +169,6 @@
 		"description": "Triggered when Character is Destroyed",
 		"prefix": "Character:on(\"Destroy\")"
 	},
-	"Character:on": {
-		"body": "Character:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
-		"description": "Character:on",
-		"prefix": "Character:on"
-	},
 	"Character:on(\"PickUp\")": {
 		"body": "Character:on(\"PickUp\", function( ${1:self}, ${2:object} )\n\t${0:-- body}\nend)",
 		"description": "When Character picks up anything",

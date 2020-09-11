@@ -1,7 +1,7 @@
 {
 	"Events:on": {
-		"body": "Events:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
-		"description": "Events:on",
+		"body": "Events:on(\"${1:EventName}\", function(${2:...})\n\t${0:-- Your code here}\nend)",
+		"description": "Registers for an user created event",
 		"prefix": "Events:on"
 	}
 }

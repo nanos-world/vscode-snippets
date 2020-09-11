@@ -20,6 +20,10 @@
 		"snippets": [
 			{
 				"language": "lua",
+				"path": "./common/Actor.json"
+			},
+			{
+				"language": "lua",
 				"path": "./classes/Events.json"
 			},
 			{
@@ -29,6 +33,14 @@
 			{
 				"language": "lua",
 				"path": "./classes/Package.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Client.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Render.json"
 			},
 			{
 				"language": "lua",

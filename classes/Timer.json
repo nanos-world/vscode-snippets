@@ -1,12 +1,12 @@
 {
 	"Timer:SetTimeout": {
-		"body": "Timer:SetTimeout(${1:cooldown}, ${2:table}, function()\n\t${0:-- body}\nend)",
-		"description": "Timer:SetTimeout",
+		"body": "Timer:SetTimeout(${1:Cooldown}, ${2:Table}, function()\n\t${0:-- Your code here}\nend)",
+		"description": "Sets a Timeout which will call Function at every Cooldown milliseconds, returns false inside the function to stops it",
 		"prefix": "Timer:SetTimeout"
 	},
 	"Timer:ClearTimeout": {
-		"body": "Timer:ClearTimeout(${1:timerID})",
-		"description": "Timer:ClearTimeout",
+		"body": "Timer:ClearTimeout(${1:TimerID})",
+		"description": "Clears/Cancel a Timeout given it’s ID",
 		"prefix": "Timer:ClearTimeout"
 	}
 }

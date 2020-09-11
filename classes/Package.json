@@ -1,27 +1,32 @@
 {
-	"Package:on": {
-		"body": "Package:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
-		"description": "Package:on",
-		"prefix": "Package:on"
-	},
 	"Package:GetName": {
 		"body": "Package:GetName()",
-		"description": "Package:GetName",
+		"description": "Returns the name of this Package",
 		"prefix": "Package:GetName"
 	},
 	"Package:Require": {
 		"body": "Package:Require(\"${1}\")",
-		"description": "Package:Require(string ScriptFile)",
+		"description": "Package:Require(string ScriptFile)\nIncludes a .lua script file (from the same Package)",
 		"prefix": "Package:Require"
 	},
 	"Package:RequirePackage": {
 		"body": "Package:RequirePackage(\"${1}\")",
-		"description": "Package:RequirePackage(string PackageName)",
+		"description": "Package:RequirePackage(string PackageName)\nIncludes another Package in this Package",
 		"prefix": "Package:RequirePackage"
 	},
 	"Package:Log": {
 		"body": "Package:Log(\"${1}\")",
 		"description": "Package:Log(string Message)",
 		"prefix": "Package:Log"
+	},
+	"Package:onLoad": {
+		"body": "Package:on(\"Load\", function()\n\t${0:-- Your code here}\nend)",
+		"description": "Called as soon the package is loaded",
+		"prefix": "Package:on"
+	},
+	"Package:onUnload": {
+		"body": "Package:on(\"Unload\", function()\n\t${0:-- Your code here}\nend)",
+		"description": "Called as soon the package is unloaded",
+		"prefix": "Package:on"
 	}
 }

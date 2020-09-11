@@ -1,27 +1,22 @@
 {
-	"Server:on": {
-		"body": "Server:on(\"${1:event}\", function( ${2:...} )\n\t${0:-- body}\nend)",
-		"description": "Server:on",
-		"prefix": "Server:on"
-	},
-	"Server:on(\"Console\")": {
-		"body": "Server:on(\"Console\", function( ${1:text} )\n\t${0:-- body}\nend)",
-		"description": "Server:on",
+	"Server:onConsole": {
+		"body": "Server:on(\"Console\", function( ${1:Text} )\n\t${0:-- Your code here}\nend)",
+		"description": "Called when a console command is submitted",
 		"prefix": "Server:on(\"Console\")"
 	},
-	"Server:on(\"Start\")": {
-		"body": "Server:on(\"Start\", function()\n\t${0:-- body}\nend)",
-		"description": "Server:on",
+	"Server:onStart": {
+		"body": "Server:on(\"Start\", function()\n\t${0:-- Your code here}\nend)",
+		"description": "Server has been started",
 		"prefix": "Server:on(\"Start\")"
 	},
-	"Server:on(\"Stop\")": {
-		"body": "Server:on(\"Stop\", function()\n\t${0:-- body}\nend)",
-		"description": "Server:on",
+	"Server:onStop": {
+		"body": "Server:on(\"Stop\", function()\n\t${0:-- Your code here}\nend)",
+		"description": "Server has been stopped",
 		"prefix": "Server:on(\"Stop\")"
 	},
-	"Server:on(\"Tick\")": {
-		"body": "Server:on(\"Tick\", function( ${1:deltaTime} )\n\t${0:-- body}\nend)",
-		"description": "Server:on",
+	"Server:onTick": {
+		"body": "Server:on(\"Tick\", function(DeltaTime)\n\t${0:-- Your code here}\nend)",
+		"description": "Is called every 30 ms by default. Only small operations should be performed here, otherwise this can lead the server to delays",
 		"prefix": "Server:on(\"Tick\")"
 	}
 }

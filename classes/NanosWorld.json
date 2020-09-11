@@ -1,42 +1,42 @@
 {
 	"NanosWorld:GetCharacters": {
 		"body": "NanosWorld:GetCharacters()",
-		"description": "Returns an array of all characters on the server.",
+		"description": "Returns an array of all Characters on the server.",
 		"prefix": "NanosWorld:GetCharacters"
 	},
 	"NanosWorld:GetGrenades": {
 		"body": "NanosWorld:GetGrenades()",
-		"description": "Returns an array of all grenades on the server.",
+		"description": "Returns an array of all Grenades on the server.",
 		"prefix": "NanosWorld:GetGrenades"
 	},
 	"NanosWorld:GetItems": {
 		"body": "NanosWorld:GetItems()",
-		"description": "Returns an array of all items on the server.",
+		"description": "Returns an array of all Items on the server.",
 		"prefix": "NanosWorld:GetItems"
+	},
+	"NanosWorld:GetLocalPlayer": {
+		"body": "NanosWorld:GetLocalPlayer()",
+		"description": "Returns the Local Player (client side only)",
+		"prefix": "NanosWorld:GetLocalPlayer"
 	},
 	"NanosWorld:GetPlayers": {
 		"body": "NanosWorld:GetPlayers()",
-		"description": "Returns an array of all players on the server.",
+		"description": "Returns an array of all Players on the server.",
 		"prefix": "NanosWorld:GetPlayers"
 	},
 	"NanosWorld:GetProps": {
 		"body": "NanosWorld:GetProps()",
-		"description": "Returns an array of all props on the server.",
+		"description": "Returns an array of all Props on the server.",
 		"prefix": "NanosWorld:GetPlayers"
 	},
 	"NanosWorld:GetVehicles": {
 		"body": "NanosWorld:GetVehicles()",
-		"description": "Returns an array of all vehicles on the server.",
+		"description": "Returns an array of all Vehicles on the server.",
 		"prefix": "NanosWorld:GetVehicles"
 	},
 	"NanosWorld:GetWeapons": {
 		"body": "NanosWorld:GetWeapons()",
-		"description": "Returns an array of all weapons on the server.",
+		"description": "Returns an array of all Weapons on the server.",
 		"prefix": "NanosWorld:GetWeapons"
-	},
-	"NanosWorld:GetLocalPlayer": {
-		"body": "NanosWorld:GetLocalPlayer()",
-		"description": "Returns the Local Player (Client Side)",
-		"prefix": "NanosWorld:GetLocalPlayer"
 	}
 }

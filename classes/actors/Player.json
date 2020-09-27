@@ -17,17 +17,16 @@
 	"Player:UnPossess": {
 		"body": ":UnPossess()",
 		"description": "Release the Player from the Character",
-		"prefix": ":UnPossess",
-		"scope": ".lua"
+		"prefix": ":UnPossess"
 	},
-	"Player:on(\"Possess\")": {
-		"body": "Player:on(\"Possess\", function( ${1:player}, ${2:character} )\n\t${0:-- body}\nend)",
+	"Player:onPossess": {
+		"body": ":on(\"Possess\", function( ${1:player}, ${2:character} )\n\t${0:-- Your code here}\nend)",
 		"description": "A Player was bound to a Character",
-		"prefix": "Player:on(\"Possess\")"
+		"prefix": ":on(\"Possess\")"
 	},
-	"Player:on(\"UnPossess\")": {
-		"body": "Player:on(\"UnPossess\", function( ${1:player}, ${2:character}, ${3:isPlayerDisconnecting} )\n\t${0:-- body}\nend)",
+	"Player:onUnPossess": {
+		"body": ":on(\"UnPossess\", function( ${1:player}, ${2:character}, ${3:isPlayerDisconnecting} )\n\t${0:-- Your code here}\nend)",
 		"description": "A Character was released from the Player",
-		"prefix": "Player:on(\"UnPossess\")"
+		"prefix": ":on(\"UnPossess\")"
 	}
 }

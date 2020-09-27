@@ -9,13 +9,13 @@
 		"description": "Sets if this Trigger is visible as a Sphere",
 		"prefix": ":SetRadius"
 	},
-	"Trigger:on(\"BeginOverlap\")": {
-		"body": ":on(\"BeginOverlap\", function( ${1:self}, ${2:actor} )\n\t${0:-- body}\nend)",
+	"Trigger:onBeginOverlap": {
+		"body": ":on(\"BeginOverlap\", function( ${1:self}, ${2:actor} )\n\t${0:-- Your code here}\nend)",
 		"description": "When an Actor enters this trigger",
 		"prefix": ":on(\"BeginOverlap\")"
 	},
-	"Trigger:on(\"EndOverlap\")": {
-		"body": ":on(\"EndOverlap\", function( ${1:self}, ${2:actor} )\n\t${0:-- body}\nend)",
+	"Trigger:onEndOverlap": {
+		"body": ":on(\"EndOverlap\", function( ${1:self}, ${2:actor} )\n\t${0:-- Your code here}\nend)",
 		"description": "When an Actor leaves this trigger",
 		"prefix": ":on(\"EndOverlap\")"
 	}

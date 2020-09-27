@@ -2,7 +2,7 @@
 	"name": "nanos-world-snippets",
 	"displayName": "nanos world Official Snippets",
 	"description": "nanos world Official Snippets for VSCode",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"publisher": "nanos",
 	"engines": {
 		"vscode": "^1.29.0"

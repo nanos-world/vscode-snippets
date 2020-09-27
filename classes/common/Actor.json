@@ -93,5 +93,15 @@
 		"body": ":GetValue(${1:Key})",
 		"description": "Gets a value given a key",
 		"prefix": ":GetValue"
+	},
+	"Actor:onSpawn": {
+		"body": ":on(\"Spawn\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",
+		"description": "Triggered when an Actor is Spawned/Created",
+		"prefix": ":on(\"Spawn\")"
+	},
+	"Actor:onDestroy": {
+		"body": ":on(\"Destroy\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",
+		"description": "Triggered when an Actor is Destroyed",
+		"prefix": ":on(\"Destroy\")"
 	}
 }

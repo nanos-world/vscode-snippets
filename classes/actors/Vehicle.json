@@ -54,8 +54,8 @@
 		"description": "Starts or stops the vehicles horn",
 		"prefix": ":Horn"
 	},
-	"Vehicle:on(\"Horn\")": {
-		"body": "Vehicle:on(\"Horn\", function( ${1:self}, ${2:isHonking} )\n\t${0:-- body}\nend)",
+	"Vehicle:onHorn": {
+		"body": "Vehicle:on(\"Horn\", function( ${1:self}, ${2:isHonking} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Vehicle honks",
 		"prefix": "Vehicle:on(\"Horn\")"
 	}

@@ -3,5 +3,25 @@
 		"body": "Events:on(\"${1:EventName}\", function(${2:...})\n\t${0:-- Your code here}\nend)",
 		"description": "Registers for an user created event",
 		"prefix": "Events:on"
+	},
+	"Events:Call": {
+		"body": "Events:Call(\"${0:EventName}\", ${1:Args...})",
+		"description": "Calls an Event which will be triggered in all Local Packages",
+		"prefix": "Events:Call"
+	},
+	"Events:CallRemote (Client)": {
+		"body": "Events:CallRemote(\"${0:EventName}\", ${1:Args...})",
+		"description": "Calls an Event on Client which will be triggered in all Server Packages",
+		"prefix": "Events:CallRemote"
+	},
+	"Events:CallRemote (Server)": {
+		"body": "Events:CallRemote(\"${0:EventName}\", ${1:Player}, ${2:Args...})",
+		"description": "Calls an Event on Server which will be triggered in all Client’s Packages of Player",
+		"prefix": "Events:CallRemote"
+	},
+	"Events:BroadcastRemote": {
+		"body": "Events:BroadcastRemote(\"${0:EventName}\", ${1:Args...})",
+		"description": "Calls an Event on Server which will be triggered in all Client’s Packages",
+		"prefix": "Events:BroadcastRemote"
 	}
 }

@@ -159,123 +159,113 @@
 		"description": "0 - None,\n1 - ADS (FPS),\n2 - ZoomedZoom (TPS),\n3 - Zoomed,\n4 - ZoomedFar",
 		"prefix": ":SetWeaponAimMode"
 	},
-	"Character:on(\"Spawn\")": {
-		"body": "Character:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
-		"description": "Triggered when Character is Spawned/Created",
-		"prefix": "Character:on(\"Spawn\")"
-	},
-	"Character:on(\"Destroy\")": {
-		"body": "Character:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
-		"description": "Triggered when Character is Destroyed",
-		"prefix": "Character:on(\"Destroy\")"
-	},
-	"Character:on(\"PickUp\")": {
-		"body": "Character:on(\"PickUp\", function( ${1:self}, ${2:object} )\n\t${0:-- body}\nend)",
+	"Character:onPickUp": {
+		"body": "Character:on(\"PickUp\", function( ${1:self}, ${2:object} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character picks up anything",
 		"prefix": "Character:on(\"PickUp\")"
 	},
-	"Character:on(\"Drop\")": {
-		"body": "Character:on(\"Drop\", function( ${1:self}, ${2:object} )\n\t${0:-- body}\nend)",
+	"Character:onDrop": {
+		"body": "Character:on(\"Drop\", function( ${1:self}, ${2:object} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character drops anything",
 		"prefix": "Character:on(\"Drop\")"
 	},
-	"Character:on(\"GrabProp\")": {
-		"body": "Character:on(\"GrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- body}\nend)",
+	"Character:onGrabProp": {
+		"body": "Character:on(\"GrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character grabs up a Prop",
 		"prefix": "Character:on(\"GrabProp\")"
 	},
-	"Character:on(\"UnGrabProp\")": {
-		"body": "Character:on(\"UnGrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- body}\nend)",
+	"Character:onUnGrabProp": {
+		"body": "Character:on(\"UnGrabProp\", function( ${1:self}, ${2:prop} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character drops a Prop",
 		"prefix": "Character:on(\"UnGrabProp\")"
 	},
-	"Character:on(\"EnterVehicle\")": {
-		"body": "Character:on(\"EnterVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- body}\nend)",
+	"Character:onEnterVehicle": {
+		"body": "Character:on(\"EnterVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character enters a vehicle",
 		"prefix": "Character:on(\"EnterVehicle\")"
 	},
-	"Character:on(\"LeaveVehicle\")": {
-		"body": "Character:on(\"LeaveVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- body}\nend)",
+	"Character:onLeaveVehicle": {
+		"body": "Character:on(\"LeaveVehicle\", function( ${1:self}, ${2:vehicle} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character leaves a vehicle",
 		"prefix": "Character:on(\"LeaveVehicle\")"
 	},
-	"Character:on(\"Respawn\")": {
-		"body": "Character:on(\"Respawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
+	"Character:onRespawn": {
+		"body": "Character:on(\"Respawn\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character Respawns",
 		"prefix": "Character:on(\"Respawn\")"
 	},
-	"Character:on(\"Death\")": {
-		"body": "Character:on(\"Death\", function( ${1:self} )\n\t${0:-- body}\nend)",
+	"Character:onDeath": {
+		"body": "Character:on(\"Death\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character Dies",
 		"prefix": "Character:on(\"Death\")"
 	},
-	"Character:on(\"TakeDamage\")": {
-		"body": "Character:on(\"TakeDamage\", function( ${1:self}, ${2:damage}, ${3:type}, ${4:bone}, ${5:from}, ${6:instigator} )\n\t${0:-- body}\nend)",
+	"Character:onTakeDamage": {
+		"body": "Character:on(\"TakeDamage\", function( ${1:self}, ${2:damage}, ${3:type}, ${4:bone}, ${5:from}, ${6:instigator} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character takes Damage",
 		"prefix": "Character:on(\"TakeDamage\")"
 	},
-	"Character:on(\"Fire\")": {
-		"body": "Character:on(\"Fire\", function( ${1:self}, ${2:weapon} )\n\t${0:-- body}\nend)",
+	"Character:onFire": {
+		"body": "Character:on(\"Fire\", function( ${1:self}, ${2:weapon} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character fires a Weapon",
 		"prefix": "Character:on(\"Fire\")"
 	},
-	"Character:on(\"Possessed\")": {
-		"body": "Character:on(\"Possessed\", function( ${1:self}, ${2:possesser} )\n\t${0:-- body}\nend)",
+	"Character:onPossessed": {
+		"body": "Character:on(\"Possessed\", function( ${1:self}, ${2:possesser} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character is possessed",
 		"prefix": "Character:on(\"Possessed\")"
 	},
-	"Character:on(\"Unpossessed\")": {
-		"body": "Character:on(\"Unpossessed\", function( ${1:self}, ${2:old_possesser} )\n\t${0:-- body}\nend)",
+	"Character:onUnpossessed": {
+		"body": "Character:on(\"Unpossessed\", function( ${1:self}, ${2:old_possesser} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character is unpossessed",
 		"prefix": "Character:on(\"Unpossessed\")"
 	},
-	"Character:on(\"Punch\")": {
-		"body": "Character:on(\"Punch\", function( ${1:self} )\n\t${0:-- body}\nend)",
+	"Character:onPunch": {
+		"body": "Character:on(\"Punch\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character punches",
 		"prefix": "Character:on(\"Punch\")"
 	},
-	"Character:on(\"Reload\")": {
-		"body": "Character:on(\"Reload\", function( ${1:self}, ${2:weapon}, ${3:ammoToReload} )\n\t${0:-- body}\nend)",
+	"Character:onReload": {
+		"body": "Character:on(\"Reload\", function( ${1:self}, ${2:weapon}, ${3:ammoToReload} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character reloads a weapon",
 		"prefix": "Character:on(\"Reload\")"
 	},
-	"Character:on(\"WeaponAimModeChanged\")": {
-		"body": "Character:on(\"WeaponAimModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onWeaponAimModeChanged": {
+		"body": "Character:on(\"WeaponAimModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - None,\n1 - ADS (FPS),\n2 - ZoomedZoom (TPS),\n3 - Zoomed,\n4 - ZoomedFar",
 		"prefix": "Character:on(\"WeaponAimModeChanged\")"
 	},
-	"Character:on(\"ViewModeChanged\")": {
-		"body": "Character:on(\"ViewModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onViewModeChanged": {
+		"body": "Character:on(\"ViewModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - FPS,\n1 - TPS1,\n2 - TPS2,\n3 - TPS3",
 		"prefix": "Character:on(\"ViewModeChanged\")"
 	},
-	"Character:on(\"SwimmingModeChanged\")": {
-		"body": "Character:on(\"SwimmingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onSwimmingModeChanged": {
+		"body": "Character:on(\"SwimmingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - None,\n1 - Superficie,\n2 - Underwater",
 		"prefix": "Character:on(\"SwimmingModeChanged\")"
 	},
-	"Character:on(\"StanceModeChanged\")": {
-		"body": "Character:on(\"StanceModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onStanceModeChanged": {
+		"body": "Character:on(\"StanceModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - None,\n1 - Standing,\n2 - Crouching,\n3 - Proning",
 		"prefix": "Character:on(\"StanceModeChanged\")"
 	},
-	"Character:on(\"RagdollModeChanged\")": {
-		"body": "Character:on(\"RagdollModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onRagdollModeChanged": {
+		"body": "Character:on(\"RagdollModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "Character:on(\"RagdollModeChanged\")",
 		"prefix": "Character:on(\"RagdollModeChanged\")"
 	},
-	"Character:on(\"FallingModeChanged\")": {
-		"body": "Character:on(\"FallingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onFallingModeChanged": {
+		"body": "Character:on(\"FallingModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - None,\n1 - Jumping,\n2 - Climbing,\n3 - Vaulting,\n4 - Falling,\n5 - HighFalling,\n6 - Parachuting,\n7 - SkyDiving",
 		"prefix": "Character:on(\"FallingModeChanged\")"
 	},
-	"Character:on(\"GaitModeChanged\")": {
-		"body": "Character:on(\"GaitModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- body}\nend)",
+	"Character:onGaitModeChanged": {
+		"body": "Character:on(\"GaitModeChanged\", function( ${1:self}, ${2:oldState}, ${3:newState} )\n\t${0:-- Your code here}\nend)",
 		"description": "0 - None,\n1 - Walking,\n2 - Sprinting",
 		"prefix": "Character:on(\"GaitModeChanged\")"
 	},
-	"Character:on(\"MoveCompleted\")": {
-		"body": "Character:on(\"MoveCompleted\", function( ${1:self}, ${2:success} )\n\t${0:-- body}\nend)",
+	"Character:onMoveCompleted": {
+		"body": "Character:on(\"MoveCompleted\", function( ${1:self}, ${2:success} )\n\t${0:-- Your code here}\nend)",
 		"description": "Called when AI reaches it’s destination, or when it fails",
 		"prefix": "Character:on(\"MoveCompleted\")"
 	}

@@ -1,21 +1,21 @@
 {
 	"Prop:SetGrabbable": {
-		"body": "Prop:SetGrabbable(${1:bool})",
+		"body": ":SetGrabbable(${1:bool})",
 		"description": "Sets ability to Grab this Prop",
-		"prefix": "Prop:SetGrabbable"
+		"prefix": ":SetGrabbable"
 	},
 	"Prop:IsGrabbable": {
-		"body": "Prop:IsGrabbable()",
+		"body": ":IsGrabbable()",
 		"description": "Gets ability to Grab this Prop",
-		"prefix": "Prop:IsGrabbable"
+		"prefix": ":IsGrabbable"
 	},
-	"Prop:on(\"Grab\")": {
-		"body": "Prop:on(\"Grab\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
+	"Prop:onGrab": {
+		"body": "Prop:on(\"Grab\", function( ${1:self}, ${2:character} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character grabs a Prop",
 		"prefix": "Prop:on(\"Grab\")"
 	},
-	"Prop:on(\"UnGrab\")": {
-		"body": "Prop:on(\"UnGrab\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
+	"Prop:onUnGrab": {
+		"body": "Prop:on(\"UnGrab\", function( ${1:self}, ${2:character} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character ungrabs a Prop",
 		"prefix": "Prop:on(\"UnGrab\")"
 	}

@@ -41,43 +41,13 @@
 	},
 	"Weapon:GetRightHandOffset": {
 		"body": ":GetRightHandOffset()",
-		"description": "Weapon:GetRightHandOffset()",
+		"description": "",
 		"prefix": ":GetRightHandOffset"
 	},
 	"Weapon:GetBulletColor": {
 		"body": ":GetBulletColor()",
-		"description": "Weapon:GetBulletColor()",
+		"description": "",
 		"prefix": ":GetBulletColor"
-	},
-	"Weapon:on(\"Fire\")": {
-		"body": "Weapon:on(\"Fire\", function( ${1:self}, ${2:shooter} )\n\t${0:-- body}\nend)",
-		"description": "When this weapon is fired",
-		"prefix": "Weapon:on(\"Fire\")"
-	},
-	"Weapon:on(\"Reload\")": {
-		"body": "Weapon:on(\"Reload\", function( ${1:self}, ${2:character}, ${3:ammoToReload} )\n\t${0:-- body}\nend)",
-		"description": "When this weapon is reloaded, optionally by a Character",
-		"prefix": "Weapon:on(\"Reload\")"
-	},
-	"Weapon:on(\"PickUp\")": {
-		"body": "Weapon:on(\"PickUp\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
-		"description": "When a Character picks up this",
-		"prefix": "Weapon:on(\"PickUp\")"
-	},
-	"Weapon:on(\"Drop\")": {
-		"body": "Weapon:on(\"Drop\", function( ${1:self}, ${2:character} )\n\t${0:-- body}\nend)",
-		"description": "When a Character drops this",
-		"prefix": "Weapon:on(\"Drop\")"
-	},
-	"Weapon:on(\"Spawn\")": {
-		"body": "Weapon:on(\"Spawn\", function( ${1:self} )\n\t${0:-- body}\nend)",
-		"description": "Triggered when a weapon is Spawned/Created",
-		"prefix": "Weapon:on(\"Spawn\")"
-	},
-	"Weapon:on(\"Destroy\")": {
-		"body": "Weapon:on(\"Destroy\", function( ${1:self} )\n\t${0:-- body}\nend)",
-		"description": "Triggered when a weapon is Destroyed",
-		"prefix": "Weapon:on(\"Destroy\")"
 	},
 	"Pickable:GetAssetName": {
 		"body": ":GetAssetName()",
@@ -98,5 +68,25 @@
 		"body": ":ReleaseUse()",
 		"description": "Force this Pickable to be released the usage",
 		"prefix": ":ReleaseUse"
+	},
+	"Weapon:onFire": {
+		"body": "Weapon:on(\"Fire\", function( ${1:self}, ${2:shooter} )\n\t${0:-- Your code here}\nend)",
+		"description": "When this weapon is fired",
+		"prefix": "Weapon:on(\"Fire\")"
+	},
+	"Weapon:onReload": {
+		"body": "Weapon:on(\"Reload\", function( ${1:self}, ${2:character}, ${3:ammoToReload} )\n\t${0:-- Your code here}\nend)",
+		"description": "When this weapon is reloaded, optionally by a Character",
+		"prefix": "Weapon:on(\"Reload\")"
+	},
+	"Weapon:onPickUp": {
+		"body": "Weapon:on(\"PickUp\", function( ${1:self}, ${2:character} )\n\t${0:-- Your code here}\nend)",
+		"description": "When a Character picks up this",
+		"prefix": "Weapon:on(\"PickUp\")"
+	},
+	"Weapon:onDrop": {
+		"body": "Weapon:on(\"Drop\", function( ${1:self}, ${2:character} )\n\t${0:-- Your code here}\nend)",
+		"description": "When a Character drops this",
+		"prefix": "Weapon:on(\"Drop\")"
 	}
 }

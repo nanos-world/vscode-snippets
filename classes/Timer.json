@@ -1,6 +1,6 @@
 {
 	"Timer:SetTimeout": {
-		"body": "Timer:SetTimeout(${1:cooldown}, function()\n\t${0:-- Your code here}\nend, ${data})",
+		"body": "Timer:SetTimeout(${1:cooldown}, function()\n\t${3:-- Your code here}\nend, ${2:{data}})",
 		"description": "Sets a Timeout which will call Function at every cooldown milliseconds, returns false inside the function to stops it",
 		"prefix": "Timer:SetTimeout"
 	},

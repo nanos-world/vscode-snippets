@@ -1,157 +1,126 @@
 {
 	"Actor:GetLocation": {
 		"body": ":GetLocation()",
-		"description": "Get the actor’s position in the game world",
-		"prefix": ":GetLocation"
+		"description": "Get the actor’s position in the game world"
 	},
 	"Actor:GetRotation": {
 		"body": ":GetRotation()",
-		"description": "Get the actor’s rotation in the game world",
-		"prefix": ":GetRotation"
+		"description": "Get the actor’s rotation in the game world"
 	},
 	"Actor:GetCollision": {
 		"body": ":GetCollision()",
-		"description": "Gets the current actor’s collision",
-		"prefix": ":GetCollision"
+		"description": "Gets the current actor’s collision"
 	},
 	"Actor:IsGravityEnabled": {
 		"body": ":IsGravityEnabled()",
-		"description": "Gets the actor’s gravity enabled",
-		"prefix": ":IsGravityEnabled"
+		"description": "Gets the actor’s gravity enabled"
 	},
 	"Actor:SetRotation": {
 		"body": ":SetRotation(${1:rotation})",
-		"description": "Sets the actor’s rotation in the game world",
-		"prefix": ":SetRotation"
+		"description": "Sets the actor’s rotation in the game world"
 	},
 	"Actor:SetLocation": {
 		"body": ":SetLocation(${1:location})",
-		"description": "Sets the actor’s location in the game world",
-		"prefix": ":SetLocation"
+		"description": "Sets the actor’s location in the game world"
 	},
 	"Actor:SetScale": {
 		"body": ":SetScale(${1:scale})",
-		"description": "Sets the actor’s scale",
-		"prefix": ":SetScale"
+		"description": "Sets the actor’s scale"
 	},
 	"Actor:SetCollision": {
 		"body": ":SetCollision(${1:collision_type})",
-		"description": "Sets the actor’s collision\nCollisionType.Normal\nCollisionType.StaticOnly\nCollisionType.NoCollision",
-		"prefix": ":SetCollision"
+		"description": "Sets the actor’s collision\nCollisionType.Normal\nCollisionType.StaticOnly\nCollisionType.NoCollision"
 	},
 	"Actor:SetGravityEnabled": {
 		"body": ":SetGravityEnabled(${1:is_enabled})",
-		"description": "Sets the actor’s gravity enabled",
-		"prefix": ":SetGravityEnabled"
+		"description": "Sets the actor’s gravity enabled"
 	},
 	"Actor:SetHighlightEnabled": {
 		"body": ":SetHighlightEnabled(${1:is_enabled}, ${2:index})",
-		"description": "Sets if this Actors is Highlighting at a specific Index color",
-		"prefix": ":SetHighlightEnabled"
+		"description": "Sets if this Actors is Highlighting at a specific Index color"
 	},
 	"Actor:SetInitialLocation": {
 		"body": ":SetInitialLocation(${1:initial_location})",
-		"description": "Sets the initial location",
-		"prefix": ":SetInitialLocation"
+		"description": "Sets the initial location"
 	},
 	"Actor:GetInitialLocation": {
 		"body": ":GetInitialLocation()",
-		"description": "Gets the initial location",
-		"prefix": ":GetInitialLocation"
+		"description": "Gets the initial location"
 	},
 	"Actor:SetTintColor": {
 		"body": ":SetTintColor(${1:tint_color})",
-		"description": "Sets the tint color, for completely paint an object, multiply the color by 10 or 100",
-		"prefix": ":SetTintColor"
+		"description": "Sets the tint color, for completely paint an object, multiply the color by 10 or 100"
 	},
 	"Actor:SetNetworkAuthority": {
 		"body": ":SetNetworkAuthority(${1:player}, ${2:time_ms})",
-		"description": "Sets this actor’s new Player network authority. This player will be manually assigned to handle this actor physics and share it’s location with other clients. The authority assignment will still be overriden by the game automatically, to avoid that set a big time value so the player can keep longer with the authority and override the natural authority selection.",
-		"prefix": ":SetNetworkAuthority"
+		"description": "Sets this actor’s new Player network authority. This player will be manually assigned to handle this actor physics and share it’s location with other clients. The authority assignment will still be overriden by the game automatically, to avoid that set a big time value so the player can keep longer with the authority and override the natural authority selection."
 	},
 	"Actor:GetTintColor": {
 		"body": ":GetTintColor()",
-		"description": "Gets the Tint Color",
-		"prefix": ":GetTintColor"
+		"description": "Gets the Tint Color"
 	},
 	"Actor:TranslateTo": {
 		"body": ":TranslateTo(${1:location}, ${2:speed})",
-		"description": "Smoothly moves this actor to a Location with a certain Speed",
-		"prefix": ":TranslateTo"
+		"description": "Smoothly moves this actor to a Location with a certain Speed"
 	},
 	"Actor:RotateTo": {
 		"body": ":RotateTo(${1:rotation}, ${2:speed})",
-		"description": "Smoothly rotates this actor to a Rotation with a certain Speed",
-		"prefix": ":RotateTo"
+		"description": "Smoothly rotates this actor to a Rotation with a certain Speed"
 	},
 	"Actor:Destroy": {
 		"body": ":Destroy()",
-		"description": "Destroys this Actor",
-		"prefix": ":Destroy"
+		"description": "Destroys this Actor"
 	},
 	"Actor:Detach": {
 		"body": ":Detach()",
-		"description": "Detaches this Actor from AttachedTo Actor",
-		"prefix": ":Detach"
+		"description": "Detaches this Actor from AttachedTo Actor"
 	},
 	"Actor:IsInWater": {
 		"body": ":IsInWater()",
-		"description": "Gets if the actor is in Water",
-		"prefix": ":IsInWater"
+		"description": "Gets if the actor is in Water"
 	},
 	"Actor:GetID": {
 		"body": ":GetID()",
-		"description": "Gets the network ID of this entity (same in both client and server)",
-		"prefix": ":GetID"
+		"description": "Gets the network ID of this entity (same in both client and server)"
 	},
 	"Actor:IsValid": {
 		"body": ":IsValid()",
-		"description": "Returns if this is Valid",
-		"prefix": ":IsValid"
+		"description": "Returns if this is Valid"
 	},
 	"Actor:AttachTo": {
 		"body": ":AttachTo(${1:other}, ${2:bone_name}, ${3:relative_location}, ${4:relative_rotation})",
-		"description": "Attaches this Actor to any other Actor with a Relative Offset",
-		"prefix": ":AttachTo"
+		"description": "Attaches this Actor to any other Actor with a Relative Offset"
 	},
 	"Actor:AddImpulse": {
 		"body": ":AddImpulse(${1:force}, ${2:velocity_change})",
-		"description": "Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)",
-		"prefix": ":AddImpulse"
+		"description": "Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)"
 	},
 	"Actor:SetValue": {
 		"body": ":SetValue(${1:key}, ${2:value})",
-		"description": "Sets a value in this entity, which can be accessed by any package (local only)",
-		"prefix": ":SetValue"
+		"description": "Sets a value in this entity, which can be accessed by any package (local only)"
 	},
 	"Actor:GetVelocity": {
 		"body": ":GetVelocity()",
-		"description": "Returns the current actor Velocity",
-		"prefix": ":GetVelocity"
+		"description": "Returns the current actor Velocity"
 	},
 	"Actor:GetType": {
 		"body": ":GetType()",
-		"description": "Returns the type of this Actor",
-		"prefix": ":GetType"
+		"description": "Returns the type of this Actor"
 	},
 	"Actor:GetValue": {
 		"body": ":GetValue(${1:key})",
-		"description": "Gets a value given a key",
-		"prefix": ":GetValue"
+		"description": "Gets a value given a key"
 	},
 	"Actor:SubscribeSpawn": {
 		"body": ":Subscribe(\"Spawn\", function(${1:self})\n\t${0:-- Your code here}\nend)",
-		"description": "Triggered when an Actor is Spawned/Created",
-		"prefix": ":Subscribe(\"Spawn\")"
+		"description": "Triggered when an Actor is Spawned/Created"
 	},
 	"Actor:SubscribeDestroy": {
 		"body": ":Subscribe(\"Destroy\", function(${1:self})\n\t${0:-- Your code here}\nend)",
-		"description": "Triggered when an Actor is Destroyed",
-		"prefix": ":Subscribe(\"Destroy\")"
+		"description": "Triggered when an Actor is Destroyed"
 	},
 	"Actor:SubscribeValueChange": {
 		"body": ":Subscribe(\"ValueChange\", function(${1:self}, ${2:key}, ${3:value})\n\t${0:-- Your code here}\nend)",
-		"description": "Triggered when an Entity has it’s value changed",
-		"prefix": ":Subscribe(\"ValueChange\")"
+		"description": "Triggered when an Entity has it’s value changed"
 	}
 }

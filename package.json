@@ -2,7 +2,7 @@
 	"name": "nanos-world-snippets",
 	"displayName": "nanos world Official Snippets",
 	"description": "nanos world Official Snippets for VSCode",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"publisher": "nanos",
 	"engines": {
 		"vscode": "^1.29.0"
@@ -20,7 +20,19 @@
 		"snippets": [
 			{
 				"language": "lua",
+				"path": "./Enums.json"
+			},
+			{
+				"language": "lua",
 				"path": "./common/Actor.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Assets.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/Client.json"
 			},
 			{
 				"language": "lua",
@@ -33,10 +45,6 @@
 			{
 				"language": "lua",
 				"path": "./classes/Package.json"
-			},
-			{
-				"language": "lua",
-				"path": "./classes/Client.json"
 			},
 			{
 				"language": "lua",
@@ -56,7 +64,19 @@
 			},
 			{
 				"language": "lua",
+				"path": "./classes/actors/Cable.json"
+			},
+			{
+				"language": "lua",
 				"path": "./classes/actors/Character.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/File.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Grenade.json"
 			},
 			{
 				"language": "lua",
@@ -68,11 +88,27 @@
 			},
 			{
 				"language": "lua",
+				"path": "./classes/actors/Particle.json"
+			},
+			{
+				"language": "lua",
 				"path": "./classes/actors/Player.json"
 			},
 			{
 				"language": "lua",
 				"path": "./classes/actors/Prop.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/Sound.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/StaticMesh.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/TextRender.json"
 			},
 			{
 				"language": "lua",
@@ -85,6 +121,10 @@
 			{
 				"language": "lua",
 				"path": "./classes/actors/Weapon.json"
+			},
+			{
+				"language": "lua",
+				"path": "./classes/actors/WebUI.json"
 			}
 		]
 	},

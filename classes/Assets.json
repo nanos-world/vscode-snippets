@@ -1,0 +1,42 @@
+{
+	"Assets:GetAssetPacks": {
+		"body": "Assets:GetAssetPacks()",
+		"description": "Returns an array of tables containing information about all loaded Asset Packs [{Name, Path, Author, Version}, ...]",
+		"prefix": "Assets:GetAssetPacks"
+	},
+	"Assets:GetAnimations": {
+		"body": "Assets:GetAnimations(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Animation Assets Keys from an AssetPack",
+		"prefix": "Assets:GetAnimations"
+	},
+	"Assets:GetMaps": {
+		"body": "Assets:GetMaps(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Map Assets Keys from an AssetPack",
+		"prefix": "Assets:GetMaps"
+	},
+	"Assets:GetParticles": {
+		"body": "Assets:GetParticles(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Particle Assets Keys from an AssetPack",
+		"prefix": "Assets:GetParticles"
+	},
+	"Assets:GetSounds": {
+		"body": "Assets:GetSounds(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Sound Assets Keys from an AssetPack",
+		"prefix": "Assets:GetSounds"
+	},
+	"Assets:GetSkeletalMeshes": {
+		"body": "Assets:GetSkeletalMeshes(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Skeletal Mesh Assets Keys from an AssetPack",
+		"prefix": "Assets:GetSkeletalMeshes"
+	},
+	"Assets:GetStaticMeshes": {
+		"body": "Assets:GetStaticMeshes(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Static Mesh Assets Keys from an AssetPack",
+		"prefix": "Assets:GetStaticMeshes"
+	},
+	"Assets:GetOthers": {
+		"body": "Assets:GetOthers(\"${1:asset_pack_path}\")",
+		"description": "Returns an array of strings containing all Other Assets Keys from an AssetPack",
+		"prefix": "Assets:GetOthers"
+	}
+}

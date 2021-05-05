@@ -1,0 +1,6 @@
+{
+	"File:Close()": {
+		"body": ":Close()",
+		"description": "Closes the file"
+	}
+}

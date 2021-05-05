@@ -1,2 +1,162 @@
 {
+	"Client:CallLevelBlueprintEvent": {
+		"body": "Client:CallLevelBlueprintEvent(\"${1:event_name}\")",
+		"description": "Calls a Level Blueprint custom event (which can be added when creating levels through Unreal Engine). Parameters can be concatened to event_name like 'MyEventName 123, 'MyParameter2', 456'",
+		"prefix": "Client:CallLevelBlueprintEvent"
+	},
+	"Client:DrawDebugLine": {
+		"body": "Client:DrawDebugLine(${1:start}, ${2:end}, ${3:color}, ${4:duration}, ${5:thickness})",
+		"description": "Draws a Debug Line in the World",
+		"prefix": "Client:DrawDebugLine"
+	},
+	"Client:DrawDebugPoint": {
+		"body": "Client:DrawDebugPoint(${1:start}, ${2:color}, ${3:duration}, ${4:thickness})",
+		"description": "Draws a Debug Point in the World",
+		"prefix": "Client:DrawDebugPoint"
+	},
+	"Client:DrawDebugSphere": {
+		"body": "Client:DrawDebugSphere(${1:start}, ${2:radius}, ${3:segments}, ${4:color}, ${5:duration}, ${5:thickness})",
+		"description": "Draws a Debug Sphere in the World",
+		"prefix": "Client:DrawDebugSphere"
+	},
+	"Client:InitializeDiscord": {
+		"body": "Client:InitializeDiscord(${1:client_id})",
+		"description": "Initializes the Discord Integration with your custom client_id",
+		"prefix": "Client:InitializeDiscord"
+	},
+	"Client:SendChatMessage": {
+		"body": "Client:SendChatMessage(\"${1:message}\")",
+		"description": "Sends a chat message which will display local only",
+		"prefix": "Client:SendChatMessage"
+	},
+	"Client:SetChatConfiguration": {
+		"body": "Client:SetChatConfiguration(${1:location}, ${2:size}, ${3:anchors_min}, ${4:anchors_max}, ${5:alignment}, ${6:justify}, ${7:show_scrollbar})",
+		"description": "Configure the Chat. Anchors = (1, 1) means the location will be relative to bottom right and (0, 0) to top left.",
+		"prefix": "Client:SetChatConfiguration"
+	},
+	"Client:SetCrosshairEnabled": {
+		"body": "Client:SetCrosshairEnabled(${1:enabled})",
+		"description": "Enables/Disables the default Crosshair",
+		"prefix": "Client:SetCrosshairEnabled"
+	},
+	"Client:SetDiscordActivity": {
+		"body": "Client:SetDiscordActivity(\"${1:state}\", \"${1:details}\", \"${1:large_image}\", \"${1:large_text}\")",
+		"description": "Communicates with Discord and sets a custom user status",
+		"prefix": "Client:SetDiscordActivity"
+	},
+	"Client:SetInputEnabled": {
+		"body": "Client:SetInputEnabled(${1:enabled})",
+		"description": "Toggles Local Player input",
+		"prefix": "Client:SetInputEnabled"
+	},
+	"Client:SetMouseEnabled": {
+		"body": "Client:SetMouseEnabled(${1:enabled})",
+		"description": "Displays/Hides Mouse Cursor",
+		"prefix": "Client:SetMouseEnabled"
+	},
+	"Client:SetOutlineColor": {
+		"body": "Client:SetOutlineColor(${1:color})",
+		"description": "Changes the Outline Color for interactable stuff. Multiply it by 5 (or more) for having a glowing effect.",
+		"prefix": "Client:SetOutlineColor"
+	},
+	"Client:SetHighlightColor": {
+		"body": "Client:SetHighlightColor(${1:color}, ${2:index})",
+		"description": "Changes the Highlight Color for highlighted actors at a specific Index. Multiply it by 5 (or more) for having a glowing effect.",
+		"prefix": "Client:SetHighlightColor"
+	},
+	"Client:SetValue": {
+		"body": "Client:SetValue(\"${1:key}\", ${2:value})",
+		"description": "Sets a global value in the Client, which can be accessed from anywhere (client side)",
+		"prefix": "Client:SetValue"
+	},
+	"Client:Spectate": {
+		"body": "Client:Spectate(${1:player})",
+		"description": "Spectates a Player. The local camera will follow the Player’s camera.",
+		"prefix": "Client:Spectate"
+	},
+	"Client:Unspectate": {
+		"body": "Client:Unspectate()",
+		"description": "Leaves the Spectator’s State.",
+		"prefix": "Client:Unspectate"
+	},
+	"Client:Trace": {
+		"body": "Client:Trace(${1:start}, ${2:end}, ${3:collision_channel}, ${4:trace_complex}, ${5:return_entity}, ${6:return_physical_material}, ${7:draw_debug})",
+		"description": "Trace a ray against the world and returns a table with the first blocking hit information. Currently only supports trace for Character, Vehicle, Static Mesh and Prop, more can be requested.\nReturned Table: {'Success', 'Location', 'Normal', 'Entity', 'ActorName', 'ComponentName', 'SurfaceType'}",
+		"prefix": "Client:Trace"
+	},
+	"Client:GetRandomReachablePointInRadius": {
+		"body": "Client:GetRandomReachablePointInRadius(${1:origin}, ${2:radius})",
+		"description": "Finds random, reachable point in navigable space restricted to radius around origin (only if map has a NavMesh)",
+		"prefix": "Client:GetRandomReachablePointInRadius"
+	},
+	"Client:GetMousePosition": {
+		"body": "Client:GetMousePosition()",
+		"description": "Gets the current mouse screen location",
+		"prefix": "Client:GetMousePosition"
+	},
+	"Client:GetPackages": {
+		"body": "Client:GetPackages()",
+		"description": "Returns a list of Packages folder names loaded and running in the client",
+		"prefix": "Client:GetPackages"
+	},
+	"Client:GetValue": {
+		"body": "Client:GetValue(\"${1:key}\")",
+		"description": "Gets a value given a key",
+		"prefix": "Client:GetValue"
+	},
+	"Client:IsKeyDown": {
+		"body": "Client:IsKeyDown(\"${1:key_name}\")",
+		"description": "Returns if a key is being pressed",
+		"prefix": "Client:IsKeyDown"
+	},
+	"Client:IsMouseEnabled": {
+		"body": "Client:IsMouseEnabled()",
+		"description": "",
+		"prefix": "Client:IsMouseEnabled"
+	},
+	"Client:SubscribeChat": {
+		"body": "Client:Subscribe(\"Chat\", function(text)\n\t${0:-- Your code here}\nend)",
+		"description": "Called when a chat text is submitted (by LocalPlayer) - Return false to do not send the message",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeChatEntry": {
+		"body": "Client:Subscribe(\"ChatEntry\", function(text, sender)\n\t${0:-- Your code here}\nend)",
+		"description": "Called when a Chat Entry is received, this is also triggered when SendChatMessage is called",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeConsole": {
+		"body": "Client:Subscribe(\"Console\", function(text)\n\t${0:-- Your code here}\nend)",
+		"description": "Called when a console command is submitted",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeKeyDown": {
+		"body": "Client:Subscribe(\"KeyDown\", function(key_name)\n\t${0:-- Your code here}\nend)",
+		"description": "A keyboard key has been pressed / is being pressed - Return false to block it",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeKeyUp": {
+		"body": "Client:Subscribe(\"KeyUp\", function(key_name)\n\t${0:-- Your code here}\nend)",
+		"description": "A keyboard key has been released - Return false to block it",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeLogEntry": {
+		"body": "Client:Subscribe(\"LogEntry\", function(text, type)\n\t${0:-- Your code here}\nend)",
+		"description": "Called when a Client log is received",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeMouseDown": {
+		"body": "Client:Subscribe(\"MouseDown\", function(key_name, mouse_x, mouse_y)\n\t${0:-- Your code here}\nend)",
+		"description": "A mouse button has been pressed / is being pressed - Return false to block it",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeMouseUp": {
+		"body": "Client:Subscribe(\"MouseUp\", function(key_name, mouse_x, mouse_y)\n\t${0:-- Your code here}\nend)",
+		"description": "A mouse button has been released - Return false to block it",
+		"prefix": "Client:Subscribe"
+	},
+	"Client:SubscribeTick": {
+		"body": "Client:Subscribe(\"Tick\", function(delta_time)\n\t${0:-- Your code here}\nend)",
+		"description": "Called Every Frame. Do not abuse.",
+		"prefix": "Client:Subscribe"
+	}
 }

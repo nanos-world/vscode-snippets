@@ -1,8 +1,8 @@
 {
-	"Events:on": {
+	"Events:Subscribe": {
 		"body": "Events:Subscribe(\"${1:event_name}\", function(${2:...})\n\t${0:-- Your code here}\nend)",
 		"description": "Registers for an user created event",
-		"prefix": "Events:on"
+		"prefix": "Events:Subscribe"
 	},
 	"Events:Call": {
 		"body": "Events:Call(\"${0:event_name}\", ${1:args...})",
@@ -15,7 +15,7 @@
 		"prefix": "Events:CallRemote"
 	},
 	"Events:CallRemote (Server)": {
-		"body": "Events:CallRemote(\"${0:event_name}\", ${1:Player}, ${2:args...})",
+		"body": "Events:CallRemote(\"${0:event_name}\", ${1:player}, ${2:args...})",
 		"description": "Calls an Event on Server which will be triggered in all Client’s Packages of Player",
 		"prefix": "Events:CallRemote"
 	},

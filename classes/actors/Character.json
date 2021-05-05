@@ -214,10 +214,10 @@
 		"description": "When Character is possessed",
 		"prefix": "Character:on(\"Possessed\")"
 	},
-	"Character:onUnpossessed": {
-		"body": "Character:on(\"Unpossessed\", function( ${1:self}, ${2:old_possesser} )\n\t${0:-- Your code here}\nend)",
+	"Character:onUnPossessed": {
+		"body": "Character:on(\"UnPossessed\", function( ${1:self}, ${2:old_possesser} )\n\t${0:-- Your code here}\nend)",
 		"description": "When Character is unpossessed",
-		"prefix": "Character:on(\"Unpossessed\")"
+		"prefix": "Character:on(\"UnPossessed\")"
 	},
 	"Character:onPunch": {
 		"body": "Character:on(\"Punch\", function( ${1:self} )\n\t${0:-- Your code here}\nend)",

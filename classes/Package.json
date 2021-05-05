@@ -1,32 +1,77 @@
 {
+	"Package:Call": {
+		"body": "Package:Call(${1:package_name}, ${2:function_name}, {${3:args...}})",
+		"description": "Calls an exported function from an other Package",
+		"prefix": "Package:Call"
+	},
+	"Package:Error": {
+		"body": "Package:Error(\"${1:message}\")",
+		"description": "Logs and formats an error message in the console in Red (the proper and nanos way)",
+		"prefix": "Package:Error"
+	},
+	"Package:Export": {
+		"body": "Package:Export(\"${1:function_name}\", ${2:function})",
+		"description": "‘Exports’ a function to be called from any other Package",
+		"prefix": "Package:Export"
+	},
+	"Package:Log": {
+		"body": "Package:Log(\"${1:message}\")",
+		"description": "Logs and formats a message in the console (the proper and nanos way)",
+		"prefix": "Package:Log"
+	},
+	"Package:Require": {
+		"body": "Package:Require(\"${1:script_file}\")",
+		"description": "Package:Require(string ScriptFile)\nIncludes a .lua script file (from the same Package)",
+		"prefix": "Package:Require"
+	},
+	"Package:RequirePackage": {
+		"body": "Package:RequirePackage(\"${1:package_name}\")",
+		"description": "Package:RequirePackage(string PackageName)\nIncludes another Package in this Package",
+		"prefix": "Package:RequirePackage"
+	},
+	"Package:Warn": {
+		"body": "Package:Warn(\"${1:message}\")",
+		"description": "Logs and formats a warning message in the console in Orange (the proper and nanos way)",
+		"prefix": "Package:Warn"
+	},
+	"Package:SetPersistentData": {
+		"body": "Package:SetPersistentData(\"${1:key}\", ${2:value})",
+		"description": "Sets a Persistent Value which will be saved to Disk",
+		"prefix": "Package:SetPersistentData"
+	},
+	"Package:GetDirectories": {
+		"body": "Package:GetDirectories(\"${1:path_filter}\")",
+		"description": "Gets a list of all directories in this package, optionally with filters",
+		"prefix": "Package:GetDirectories"
+	},
+	"Package:GetFiles": {
+		"body": "Package:GetFiles(\"${1:path_filter}\", \"${1:extension_filter}\")",
+		"description": "Gets a list of all files in this package, optionally with filters",
+		"prefix": "Package:GetFiles"
+	},
 	"Package:GetName": {
 		"body": "Package:GetName()",
 		"description": "Returns the name of this Package",
 		"prefix": "Package:GetName"
 	},
-	"Package:Require": {
-		"body": "Package:Require(\"${1}\")",
-		"description": "Package:Require(string ScriptFile)\nIncludes a .lua script file (from the same Package)",
-		"prefix": "Package:Require"
+	"Package:GetPath": {
+		"body": "Package:GetPath()",
+		"description": "Returns the path of this Package",
+		"prefix": "Package:GetPath"
 	},
-	"Package:RequirePackage": {
-		"body": "Package:RequirePackage(\"${1}\")",
-		"description": "Package:RequirePackage(string PackageName)\nIncludes another Package in this Package",
-		"prefix": "Package:RequirePackage"
+	"Package:GetPersistentData": {
+		"body": "Package:GetPersistentData()",
+		"description": "Gets all Persistent Values from the Disk",
+		"prefix": "Package:GetPersistentData"
 	},
-	"Package:Log": {
-		"body": "Package:Log(\"${1}\")",
-		"description": "Package:Log(string Message)",
-		"prefix": "Package:Log"
-	},
-	"Package:onLoad": {
-		"body": "Package:on(\"Load\", function()\n\t${0:-- Your code here}\nend)",
+	"Package:SubscribeLoad": {
+		"body": "Package:Subscribe(\"Load\", function()\n\t${0:-- Your code here}\nend)",
 		"description": "Called as soon the package is loaded",
-		"prefix": "Package:on"
+		"prefix": "Package:Subscribe"
 	},
-	"Package:onUnload": {
-		"body": "Package:on(\"Unload\", function()\n\t${0:-- Your code here}\nend)",
+	"Package:SubscribeUnload": {
+		"body": "Package:Subscribe(\"Unload\", function()\n\t${0:-- Your code here}\nend)",
 		"description": "Called as soon the package is unloaded",
-		"prefix": "Package:on"
+		"prefix": "Package:Subscribe"
 	}
 }

@@ -1,22 +1,117 @@
 {
-	"Server:onConsole": {
-		"body": "Server:on(\"Console\", function( ${1:Text} )\n\t${0:-- Your code here}\nend)",
+	"Server:BroadcastChatMessage": {
+		"body": "Server:BroadcastChatMessage(\"${1:message}\")",
+		"description": "Sends a chat message to everyone",
+		"prefix": "Server:BroadcastChatMessage"
+	},
+	"Server:ChangeMap": {
+		"body": "Server:ChangeMap(\"${1:map_path}\")",
+		"description": "Restarts the server in a new Map, restarts all packages and reconnects all players",
+		"prefix": "Server:ChangeMap"
+	},
+	"Server:HTTPRequest": {
+		"body": "Server:HTTPRequest(\"${1:uri}\", \"${2:endpoint}\", \"${3:method}\", \"${4:data}\", {${5:headers}}, ${6:callback})",
+		"description": "Makes a HTTP Request, the result will be returned in the provided Callback function in the format (Status, Response)",
+		"prefix": "Server:HTTPRequest"
+	},
+	"Server:ReloadPackage": {
+		"body": "Server:ReloadPackage(\"${1:package_folder_name}\")",
+		"description": "Reloads a Package",
+		"prefix": "Server:ReloadPackage"
+	},
+	"Server:SendChatMessage": {
+		"body": "Server:SendChatMessage(${1:player}, \"${2:message}\")",
+		"description": "Sends a chat message to Player only",
+		"prefix": "Server:SendChatMessage"
+	},
+	"Server:SetDescription": {
+		"body": "Server:SetDescription(\"${1:description}\", ${2:persist_to_config_file})",
+		"description": "Sets the description of the server, optionally overrides Config.toml",
+		"prefix": "Server:SetDescription"
+	},
+	"Server:SetLogo": {
+		"body": "Server:SetLogo(\"${1:logo_url}\", ${2:persist_to_config_file})",
+		"description": "Sets the logo of the server, optionally overrides Config.toml",
+		"prefix": "Server:SetLogo"
+	},
+	"Server:SetMaxPlayers": {
+		"body": "Server:SetMaxPlayers(${1:max_players}, ${2:persist_to_config_file})",
+		"description": "Sets the maximum player slots of the server, optionally overrides Config.toml",
+		"prefix": "Server:SetMaxPlayers"
+	},
+	"Server:SetName": {
+		"body": "Server:SetName(\"${1:name}\", ${2:persist_to_config_file})",
+		"description": "Sets the name of the server, optionally overrides Config.toml",
+		"prefix": "Server:SetName"
+	},
+	"Server:SetPassword": {
+		"body": "Server:SetPassword(\"${1:password}\", ${2:persist_to_config_file})",
+		"description": "Sets the password of the server, optionally overrides Config.toml",
+		"prefix": "Server:SetPassword"
+	},
+	"Server:SetValue": {
+		"body": "Server:SetValue(\"${1:key}\", ${2:value})",
+		"description": "Sets a global value in the Server, which can be accessed from anywhere (server side)",
+		"prefix": "Server:SetValue"
+	},
+	"Server:Stop": {
+		"body": "Server:Stop()",
+		"description": "Closes the Server",
+		"prefix": "Server:Stop"
+	},
+	"Server:UnloadPackage": {
+		"body": "Server:UnloadPackage(\"${1:package_folder_name}\")",
+		"description": "Unloads a Package",
+		"prefix": "Server:UnloadPackage"
+	},
+	"Server:GetPackages": {
+		"body": "Server:GetPackages(${1:only_loaded})",
+		"description": "Returns a list of Packages folder names available in the server, optionally returns only loaded and running packages",
+		"prefix": "Server:GetPackages"
+	},
+	"Server:GetValue": {
+		"body": "Server:GetValue(\"${1:key}\")",
+		"description": "Gets a value given a key",
+		"prefix": "Server:GetValue"
+	},
+	"Server:SubscribeChat": {
+		"body": "Server:Subscribe(\"Chat\", function(text, sender)\n\t${1:-- Your code here}\nend)",
+		"description": "Called when a player types something in the chat - return false to do not send the message",
+		"prefix": "Server:Subscribe"
+	},
+	"Server:SubscribeChatEntry": {
+		"body": "Server:Subscribe(\"ChatEntry\", function(text, sender)\n\t${1:-- Your code here}\nend)",
+		"description": "Called when a Chat Entry is received, this is also triggered when SendChatMessage is called",
+		"prefix": "Server:Subscribe"
+	},
+	"Server:SubscribeConsole": {
+		"body": "Server:Subscribe(\"Console\", function(text)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a console command is submitted",
-		"prefix": "Server:on(\"Console\")"
+		"prefix": "Server:Subscribe"
 	},
-	"Server:onStart": {
-		"body": "Server:on(\"Start\", function()\n\t${0:-- Your code here}\nend)",
+	"Server:SubscribeLogEntry": {
+		"body": "Server:Subscribe(\"LogEntry\", function(text, type)\n\t${1:-- Your code here}\nend)",
+		"description": "Called when a Server log is received",
+		"prefix": "Server:Subscribe"
+	},
+	"Server:SubscribeStart": {
+		"body": "Server:Subscribe(\"Start\", function()\n\t${1:-- Your code here}\nend)",
 		"description": "Server has been started",
-		"prefix": "Server:on(\"Start\")"
+		"prefix": "Server:Subscribe"
 	},
-	"Server:onStop": {
-		"body": "Server:on(\"Stop\", function()\n\t${0:-- Your code here}\nend)",
+	"Server:SubscribePlayerConnect": {
+		"body": "Server:Subscribe(\"PlayerConnect\", function(IP, player_account_ID, player_name)\n\t${1:-- Your code here}\nend)",
+		"description": "Called when a player is attempting to connect to the server - return false to do not allow it",
+		"prefix": "Server:Subscribe"
+	},
+	"Server:SubscribeStop": {
+		"body": "Server:Subscribe(\"Stop\", function()\n\t${1:-- Your code here}\nend)",
 		"description": "Server has been stopped",
-		"prefix": "Server:on(\"Stop\")"
+		"prefix": "Server:Subscribe"
 	},
-	"Server:onTick": {
-		"body": "Server:on(\"Tick\", function(DeltaTime)\n\t${0:-- Your code here}\nend)",
+	"Server:SubscribeTick": {
+		"body": "Server:Subscribe(\"Tick\", function(delta_time)\n\t${1:-- Your code here}\nend)",
 		"description": "Is called every 30 ms by default. Only small operations should be performed here, otherwise this can lead the server to delays",
-		"prefix": "Server:on(\"Tick\")"
+		"prefix": "Server:Subscribe"
 	}
 }

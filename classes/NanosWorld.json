@@ -83,5 +83,10 @@
 		"body": "NanosWorld:IsA(${1:object}, ${1:class_type})",
 		"description": "Returns if an object is a class",
 		"prefix": "NanosWorld:IsA"
+	},
+	"NanosWorld:SubscribeSpawnLocalPlayer": {
+		"body": "Client:SubscribeSpawnLocalPlayer(\"SpawnLocalPlayer\", function(local_player)\n\t${0:-- Your code here}\nend)",
+		"description": "Called once LocalPlayer is created.",
+		"prefix": "Client:SubscribeSpawnLocalPlayer"
 	}
 }

@@ -1,2 +1,47 @@
 {
+	"WebUI:Constructor": {
+		"body": "WebUI(\"${1:name}\", \"${2:path}\", ${3:is_visible}, \"${4:package_name}\")",
+		"description": "WebUI Constructor",
+		"prefix": "WebUI"
+	},
+	"WebUI:BringToFront": {
+		"body": ":BringToFront()",
+		"description": "Puts this WebUI in the front of all WebUIs",
+		"prefix": ":BringToFront"
+	},
+	"WebUI:CallEvent": {
+		"body": ":CallEvent(\"${1:event_name}\", {${2:arguments}})",
+		"description": "Calls an Event on the Browser’s JavaScript",
+		"prefix": ":CallEvent"
+	},
+	"WebUI:LoadURL": {
+		"body": ":LoadURL(\"${1:url}\")",
+		"description": "Loads a new File/URL in this Browser",
+		"prefix": ":LoadURL"
+	},
+	"WebUI:SetFocus": {
+		"body": ":SetFocus()",
+		"description": "Enables the focus on this browser (i.e. can receives keyboard and mouse input). Note: only one browser can have focus per time. When you click at the screen/WebUI the focus is got automatically as well",
+		"prefix": ":SetFocus"
+	},
+	"WebUI:SetVisible": {
+		"body": ":SetVisible(${1:is_visible})",
+		"description": "Toggles the visibility",
+		"prefix": ":SetVisible"
+	},
+	"WebUI:IsVisible": {
+		"body": ":IsVisible()",
+		"description": "Returns if this WebUI is currently visible",
+		"prefix": ":IsVisible"
+	},
+	"WebUI:SubscribeFailed": {
+		"body": ":Subscribe(\"Failed\", function(error_code, message)\n\t${1:-- Your code here}\nend)",
+		"description": "When this page fails to load",
+		"prefix": ":Subscribe(\"Failed\")"
+	},
+	"WebUI:SubscribeReady": {
+		"body": ":Subscribe(\"Ready\", function()\n\t${1:-- Your code here}\nend)",
+		"description": "When this page is fully loaded",
+		"prefix": ":Subscribe(\"Ready\")"
+	}
 }

@@ -1,146 +1,146 @@
 {
 	"AimMode": {
-		"body": "AimMode.${1|None, ADS, ZoomedZoom, Zoomed, ZoomedFar|}",
+		"body": "AimMode.${1|None,ADS,ZoomedZoom,Zoomed,ZoomedFar|}",
 		"description": "AimMode",
 		"prefix": "AimMode"
 	},
 	"AnimationSlotType": {
-		"body": "AnimationSlotType.${1|FullBody, UpperBody|}",
+		"body": "AnimationSlotType.${1|FullBody,UpperBody|}",
 		"description": "",
 		"prefix": "AnimationSlotType"
 	},
 	"AttenuationFunction": {
-		"body": "AttenuationFunction.${1|Linear, Logarithmic, Inverse, LogReverse, NaturalSound|}",
+		"body": "AttenuationFunction.${1|Linear,Logarithmic,Inverse,LogReverse,NaturalSound|}",
 		"description": "",
 		"prefix": "AttenuationFunction"
 	},
 	"CameraMode": {
-		"body": "CameraMode.${1|FPSTPS, FPSOnly, TPSOnly|}",
+		"body": "CameraMode.${1|FPSTPS,FPSOnly,TPSOnly|}",
 		"description": "",
 		"prefix": "CameraMode"
 	},
 	"CollisionChannel": {
-		"body": "CollisionChannel{1|WorldStatic, WorldDynamic, Pawn, PhysicsBody, Vehicle, Destructible, TracePrimitive, Mesh, Foliage|}",
+		"body": "CollisionChannel{1|WorldStatic,WorldDynamic,Pawn,PhysicsBody,Vehicle,Destructible,TracePrimitive,Mesh,Foliage|}",
 		"description": "",
 		"prefix": "CollisionChannel"
 	},
 	"CollisionType": {
-		"body": "CollisionType.${1|Normal, StaticOnly, NoCollision|}",
+		"body": "CollisionType.${1|Normal,StaticOnly,NoCollision|}",
 		"description": "",
 		"prefix": "CollisionType"
 	},
 	"ConstraintMotion": {
-		"body": "ConstraintMotion.${1|Free, Limited, Locked|}",
+		"body": "ConstraintMotion.${1|Free,Limited,Locked|}",
 		"description": "",
 		"prefix": "ConstraintMotion"
 	},
 	"CrosshairType": {
-		"body": "CrosshairType.${1|None, Regular, Circle, Crossbow, Dot, Holo, Launcher, RegularX, Rocket, SeparatedTriangle, Shotgun0, Square1, Submachine2, Tee3, ThreeDots4, Triangle5, Vee6|}",
+		"body": "CrosshairType.${1|None,Regular,Circle,Crossbow,Dot,Holo,Launcher,RegularX,Rocket,SeparatedTriangle,Shotgun0,Square1,Submachine2,Tee3,ThreeDots4,Triangle5,Vee6|}",
 		"description": "",
 		"prefix": "CrosshairType"
 	},
 	"DamageType": {
-		"body": "DamageType.${1|Shot, Explosion, Punch, Fall, RunOver, Unknown|}",
+		"body": "DamageType.${1|Shot,Explosion,Punch,Fall,RunOver,Unknown|}",
 		"description": "",
 		"prefix": "DamageType"
 	},
 	"DifferentialType": {
-		"body": "DifferentialType.${1|LimitedSlip_4W, LimitedSlip_FrontDrive, LimitedSlip_RearDrive, Open_4W, Open_FrontDrive, Open_RearDrive|}",
+		"body": "DifferentialType.${1|LimitedSlip_4W,LimitedSlip_FrontDrive,LimitedSlip_RearDrive,Open_4W,Open_FrontDrive,Open_RearDrive|}",
 		"description": "",
 		"prefix": "DifferentialType"
 	},
 	"FallingMode": {
-		"body": "FallingMode.${1|None, Jumping, Climbing, Vaulting, Falling, HighFalling, Parachuting, SkyDiving|}",
+		"body": "FallingMode.${1|None,Jumping,Climbing,Vaulting,Falling,HighFalling,Parachuting,SkyDiving|}",
 		"description": "",
 		"prefix": "FallingMode"
 	},
 	"FontType": {
-		"body": "FontType.${1|Roboto, GothicA1, PoiretOne, Oswald, RobotoMono, OpenSans|}",
+		"body": "FontType.${1|Roboto,GothicA1,PoiretOne,Oswald,RobotoMono,OpenSans|}",
 		"description": "",
 		"prefix": "FontType"
 	},
 	"GaitMode": {
-		"body": "GaitMode.${1|None, Walking, Sprinting|}",
+		"body": "GaitMode.${1|None,Walking,Sprinting|}",
 		"description": "",
 		"prefix": "GaitMode"
 	},
 	"HandlingMode": {
-		"body": "HandlingMode.${1|SingleHandedWeapon, DoubleHandedWeapon, SingleHandedMelee, DoubleHandedMelee, Throwable, Torch, Barrel, Box|}",
+		"body": "HandlingMode.${1|SingleHandedWeapon,DoubleHandedWeapon,SingleHandedMelee,DoubleHandedMelee,Throwable,Torch,Barrel,Box|}",
 		"description": "",
 		"prefix": "HandlingMode"
 	},
 	"LogType": {
-		"body": "LogType.${1|Display, Warning, Error, Debug, Verbose, Scripting, Chat, WebUI|}",
+		"body": "LogType.${1|Display,Warning,Error,Debug,Verbose,Scripting,Chat,WebUI|}",
 		"description": "",
 		"prefix": "LogType"
 	},
 	"LightType": {
-		"body": "LightType.${1|Point, Spot, React|}",
+		"body": "LightType.${1|Point,Spot,React|}",
 		"description": "",
 		"prefix": "LightType"
 	},
 	"MaterialType": {
-		"body": "MaterialType.${1|None, Masked, Translucent, TranslucentDepth|}",
+		"body": "MaterialType.${1|None,Masked,Translucent,TranslucentDepth|}",
 		"description": "",
 		"prefix": "MaterialType"
 	},
 	"SoundType": {
-		"body": "SoundType.${1|SFX, Music|}",
+		"body": "SoundType.${1|SFX,Music|}",
 		"description": "",
 		"prefix": "SoundType"
 	},
 	"StanceMode": {
-		"body": "StanceMode.${1|None, Standing, Crouching, Proning|}",
+		"body": "StanceMode.${1|None,Standing,Crouching,Proning|}",
 		"description": "",
 		"prefix": "StanceMode"
 	},
 	"SurfaceType": {
-		"body": "SurfaceType.${1|Default, Carpet, Concrete, Grass, Gravel, Ground, MetalLight, Plastic, Sand, Snow, Water0, WoodLight1, Flesh2, MetalHeavy3, WoodHeavy4, Ice5, Mud6, Rock7, Thump8, Glass9|}",
+		"body": "SurfaceType.${1|Default,Carpet,Concrete,Grass,Gravel,Ground,MetalLight,Plastic,Sand,Snow,Water0,WoodLight1,Flesh2,MetalHeavy3,WoodHeavy4,Ice5,Mud6,Rock7,Thump8,Glass9|}",
 		"description": "",
 		"prefix": "SurfaceType"
 	},
 	"SwimmingMode": {
-		"body": "SwimmingMode.${1|None, Superficie, Underwater|}",
+		"body": "SwimmingMode.${1|None,Superficie,Underwater|}",
 		"description": "",
 		"prefix": "SwimmingMode"
 	},
 	"TextRenderAlignCamera": {
-		"body": "TextRenderAlignCamera.${1|Unaligned, AlignCameraRotation, FaceCamera|}",
+		"body": "TextRenderAlignCamera.${1|Unaligned,AlignCameraRotation,FaceCamera|}",
 		"description": "",
 		"prefix": "TextRenderAlignCamera"
 	},
 	"TextRenderBevelType": {
-		"body": "TextRenderBevelType.${1|Linear, HalfCircle, Convex, Concave, OneStep, TwoSteps, Engraved|}",
+		"body": "TextRenderBevelType.${1|Linear,HalfCircle,Convex,Concave,OneStep,TwoSteps,Engraved|}",
 		"description": "",
 		"prefix": "TextRenderBevelType"
 	},
 	"TextRenderHorizontalAlignment": {
-		"body": "TextRenderHorizontalAlignment.${1|Left, Center, Right|}",
+		"body": "TextRenderHorizontalAlignment.${1|Left,Center,Right|}",
 		"description": "",
 		"prefix": "TextRenderHorizontalAlignment"
 	},
 	"TextRenderVerticalAlignment": {
-		"body": "TextRenderVerticalAlignment.${1|Top, Center, Bottom, QuadTop|}",
+		"body": "TextRenderVerticalAlignment.${1|Top,Center,Bottom,QuadTop|}",
 		"description": "",
 		"prefix": "TextRenderVerticalAlignment"
 	},
 	"TriggerType": {
-		"body": "TriggerType.${1|Sphere, Box|}",
+		"body": "TriggerType.${1|Sphere,Box|}",
 		"description": "",
 		"prefix": "TriggerType"
 	},
 	"ViewMode": {
-		"body": "ViewMode.${1|FPS, TPS1, TPS2, TPS3|}",
+		"body": "ViewMode.${1|FPS,TPS1,TPS2,TPS3|}",
 		"description": "",
 		"prefix": "ViewMode"
 	},
 	"VOIPSetting": {
-		"body": "VOIPSetting.${1|Local, Global, Muted|}",
+		"body": "VOIPSetting.${1|Local,Global,Muted|}",
 		"description": "",
 		"prefix": "VOIPSetting"
 	},
 	"WeatherType": {
-		"body": "WeatherType.${1|Clear, Rain, Cloudy, Thunderstorm|}",
+		"body": "WeatherType.${1|Clear,Rain,Cloudy,Thunderstorm|}",
 		"description": "",
 		"prefix": "WeatherType"
 	}

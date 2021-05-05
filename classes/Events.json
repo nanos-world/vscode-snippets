@@ -1,26 +1,26 @@
 {
 	"Events:Subscribe": {
-		"body": "Events:Subscribe(\"${1:event_name}\", function(${2:...})\n\t${0:-- Your code here}\nend)",
+		"body": "Events:Subscribe(\"${1:event_name}\", function(${2:...})\n\t${3:-- Your code here}\nend)",
 		"description": "Registers for an user created event",
 		"prefix": "Events:Subscribe"
 	},
 	"Events:Call": {
-		"body": "Events:Call(\"${0:event_name}\", ${1:args...})",
+		"body": "Events:Call(\"${1:event_name}\", {${2:args...}})",
 		"description": "Calls an Event which will be triggered in all Local Packages",
 		"prefix": "Events:Call"
 	},
 	"Events:CallRemote (Client)": {
-		"body": "Events:CallRemote(\"${0:event_name}\", ${1:args...})",
+		"body": "Events:CallRemote(\"${1:event_name}\", {${2:args...}})",
 		"description": "Calls an Event on Client which will be triggered in all Server Packages",
 		"prefix": "Events:CallRemote"
 	},
 	"Events:CallRemote (Server)": {
-		"body": "Events:CallRemote(\"${0:event_name}\", ${1:player}, ${2:args...})",
+		"body": "Events:CallRemote(\"${1:event_name}\", ${2:player}, {${3:args...}})",
 		"description": "Calls an Event on Server which will be triggered in all Client’s Packages of Player",
 		"prefix": "Events:CallRemote"
 	},
 	"Events:BroadcastRemote": {
-		"body": "Events:BroadcastRemote(\"${0:event_name}\", ${1:args...})",
+		"body": "Events:BroadcastRemote(\"${1:event_name}\", {${2:args...}})",
 		"description": "Calls an Event on Server which will be triggered in all Client’s Packages",
 		"prefix": "Events:BroadcastRemote"
 	}

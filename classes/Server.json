@@ -77,41 +77,41 @@
 	"Server:SubscribeChat": {
 		"body": "Server:Subscribe(\"Chat\", function(text, sender)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a player types something in the chat - return false to do not send the message",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"Chat\")"
 	},
 	"Server:SubscribeChatEntry": {
 		"body": "Server:Subscribe(\"ChatEntry\", function(text, sender)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a Chat Entry is received, this is also triggered when SendChatMessage is called",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"ChatEntry\")"
 	},
 	"Server:SubscribeConsole": {
 		"body": "Server:Subscribe(\"Console\", function(text)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a console command is submitted",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"Console\")"
 	},
 	"Server:SubscribeLogEntry": {
 		"body": "Server:Subscribe(\"LogEntry\", function(text, type)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a Server log is received",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"LogEntry\")"
 	},
 	"Server:SubscribeStart": {
 		"body": "Server:Subscribe(\"Start\", function()\n\t${1:-- Your code here}\nend)",
 		"description": "Server has been started",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"Start\")"
 	},
 	"Server:SubscribePlayerConnect": {
 		"body": "Server:Subscribe(\"PlayerConnect\", function(IP, player_account_ID, player_name)\n\t${1:-- Your code here}\nend)",
 		"description": "Called when a player is attempting to connect to the server - return false to do not allow it",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"PlayerConnect\")"
 	},
 	"Server:SubscribeStop": {
 		"body": "Server:Subscribe(\"Stop\", function()\n\t${1:-- Your code here}\nend)",
 		"description": "Server has been stopped",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"Stop\")"
 	},
 	"Server:SubscribeTick": {
 		"body": "Server:Subscribe(\"Tick\", function(delta_time)\n\t${1:-- Your code here}\nend)",
 		"description": "Is called every 30 ms by default. Only small operations should be performed here, otherwise this can lead the server to delays",
-		"prefix": "Server:Subscribe"
+		"prefix": "Server:Subscribe(\"Tick\")"
 	}
 }

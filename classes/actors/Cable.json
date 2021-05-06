@@ -1,2 +1,52 @@
 {
+	"Cable:Constructor": {
+		"body": "Cable(${1:location})",
+		"description": "Cable Constructor",
+		"prefix": "Cable"
+	},
+	"Cable:AttachStartTo": {
+		"body": ":AttachStartTo(${1:other}, \"${2:bone_name}\", ${3:relative_location})",
+		"description": "Attached the beginning of this cable to another Actor at a specific bone or relative location",
+		"prefix": ":AttachStartTo"
+	},
+	"Cable:AttachEndTo": {
+		"body": ":AttachEndTo(${1:other}, \"${2:bone_name}\", ${3:relative_location})",
+		"description": "Attached the beginning of this cable to another Actor at a specific bone or relative location",
+		"prefix": ":AttachEndTo"
+	},
+	"Cable:DetachEnd": {
+		"body": ":DetachEnd()",
+		"description": "Detaches the End of this Cable",
+		"prefix": ":DetachEnd"
+	},
+	"Cable:DetachStart": {
+		"body": ":DetachStart()",
+		"description": "Detaches the Start of this Cable",
+		"prefix": ":DetachStart"
+	},
+	"Cable:SetAngularLimits": {
+		"body": ":SetAngularLimits(${1:swing_1_motion}, ${2:swing_2_motion}, ${3:twist_motion}, ${4:swing_1_limit}, ${5:swing_2_limit}, ${6:twist_limit})",
+		"description": "Sets the Physics Angular Limits of this cable",
+		"prefix": ":SetAngularLimits"
+	},
+	"Cable:SetCableSettings": {
+		"body": ":SetCableSettings(${1:length}, ${2:num_segments}, ${3:solver_iterations})",
+		"description": "Set the overall settings for this cable (visuals only)",
+		"prefix": ":SetCableSettings"
+	},
+	"Cable:SetForces": {
+		"body": ":SetForces(${1:force}, ${2:gravity_scale})",
+		"description": "Set the forces the cable has applied (visuals only)",
+		"prefix": ":SetForces"
+	},
+	"Cable:SetLinearLimits": {
+		"body": ":SetLinearLimits(${1:x_motion}, ${2:y_motion}, ${3:z_motion}, ${4:limit})",
+		"description": "Sets the Physics Linear Limits of this cable",
+		"prefix": ":SetLinearLimits"
+	},
+	"Cable:SetRenderingSettings": {
+		"body": ":SetRenderingSettings(${1:width}, ${2:num_sides}, ${3:tile_material})",
+		"description": "Set the rendering settings of this cable (visuals only)",
+		"prefix": ":SetRenderingSettings"
+	}
 }

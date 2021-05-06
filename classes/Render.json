@@ -1,2 +1,62 @@
 {
+	"Render:AddLine": {
+		"body": "Render:AddLine(${1:group_id}, ${2:start_position}, ${3:end_position}, ${4:thickness}, ${5:color})",
+		"description": "Draws a Line (doesn’t support opacity)",
+		"prefix": "Render:AddLine"
+	},
+	"Render:AddBox": {
+		"body": "Render:AddBox(${1:group_id}, ${2:start_position}, ${3:end_position}, ${4:thickness}, ${5:color})",
+		"description": "Draws a Box",
+		"prefix": "Render:AddBox"
+	},
+	"Render:AddTile": {
+		"body": "Render:AddTile(${1:group_id}, ${2:position}, ${3:size}, ${4:color})",
+		"description": "Draws a Tile (filled)",
+		"prefix": "Render:AddTile"
+	},
+	"Render:AddPolygon": {
+		"body": "Render:AddPolygon(${1:group_id}, ${2:screen_position}, ${3:radius}, ${4:number_of_sides}, ${5:color})",
+		"description": "Draws a Tile (filled)",
+		"prefix": "Render:AddPolygon"
+	},
+	"Render:AddText": {
+		"body": "Render:AddText(${1:group_id}, ${2:text}, ${3:position}, ${4:font_type}, ${5:font_size}, ${6:text_color}, ${7:kerning}, ${8:is_centered_x}, ${9:is_centered_y}, ${10:enable_shadow}, ${11:shadow_offset}, ${12:shadow_color}, ${13:enable_outline}, ${14:outline_color })",
+		"description": "Draws a Text with optionals Shadow and Outline",
+		"prefix": "Render:AddText"
+	},
+	"Render:Project": {
+		"body": "Render:Project(${1:world_position})",
+		"description": "Transforms a 3D world-space vector into 2D screen coordinates.",
+		"prefix": "Render:Project"
+	},
+	"Render:Deproject": {
+		"body": "Render:Deproject(${1:screen_position})",
+		"description": "Transforms a 2D screen coordinates into 3D world-space location.\nReturns {'Position', 'Direction'}",
+		"prefix": "Render:Deproject"
+	},
+	"Render:ClearItems": {
+		"body": "Render:ClearItems(${1:group_id})",
+		"description": "Remove all drawing of using that specific group_id",
+		"prefix": "Render:ClearItems"
+	},
+	"Render:UpdateItemText": {
+		"body": "Render:UpdateItemText(${1:group_id}, ${2:item_id}, ${3:new_text})",
+		"description": "Updates a specific Canvas Text giving it’s group_id and item_id",
+		"prefix": "Render:UpdateItemText"
+	},
+	"Render:UpdateItemPosition": {
+		"body": "Render:UpdateItemPosition(${1:group_id}, ${2:item_id}, ${3:new_position})",
+		"description": "Updates a specific Canvas’s position giving it’s group_id and item_id",
+		"prefix": "Render:UpdateItemPosition"
+	},
+	"Render:GetViewportSize": {
+		"body": "Render:GetViewportSize()",
+		"description": "Returns the size of viewport (how much screen space the game window occupies)",
+		"prefix": "Render:GetViewportSize"
+	},
+	"Render:SubscribeViewportResized": {
+		"body": "Render:Subscribe(\"ViewportResized\", function(new_size)\n\t${1:-- Your code here}\nend)",
+		"description": "Called when the screen is resized",
+		"prefix": "Render:Subscribe(\"ViewportResized\")"
+	}
 }
